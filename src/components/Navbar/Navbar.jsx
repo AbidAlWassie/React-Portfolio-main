@@ -1,13 +1,16 @@
 import React from 'react'
 import { useState } from 'react'
-import { HiMenuAlt4, HiX } from 'react-icons/hi'
-import { motion } from 'framer-motion'
+import { HiOutlineMenu, HiX } from 'react-icons/hi'
 
 import { images } from '../../constants'
 
 const Navbar = () => {
 
   const [toggle, setToggle] = useState(false);
+
+  const toggleNav = () => {
+    toggle ? setToggle(false) : setToggle(true);
+  }
 
   return (
     <nav className='navbar'>
@@ -23,24 +26,24 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className='nav-menu'>
-          <HiMenuAlt4 onClick={() => setToggle(true)} />
+      <div className='menuBtn'>
+        <HiOutlineMenu onClick={toggleNav} />
+      </div>
 
-          {
-            toggle && (
-              <motion.div 
-              whileInView={{ x: [300, 0] }}
-              transition={{ duration: 0.85, ease: 'easeInOut'}}
-              >
-                <HiX onClick={() => setToggle(false)} />
-                {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
-                  <li key={item}>
-                    <a href={`#${item}`} onClick={() => setToggle(false)}> {item} </a>
-                  </li>
-                ))}
-              </motion.div>
-            )
-          }
+      <div className={toggle ? "nav-menu" : "nav-menu hidden"}>
+
+          <ul className='sideMenu'>
+            
+            <div className='closeBtn'>
+            <HiX onClick={() => setToggle(false)} />
+            </div>
+
+            {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+              <li key={item}>
+                <a href={`#${item}`} onClick={() => setToggle(false)}> {item} </a>
+              </li>
+            ))}
+          </ul>
       </div>
 
     </nav>

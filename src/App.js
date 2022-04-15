@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import { About, Footer, Header, Skills, Testimonials, Work } from './container';
 import { Navbar } from './components';
 

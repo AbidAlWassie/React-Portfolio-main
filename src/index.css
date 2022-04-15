@@ -4,7 +4,7 @@
 
 @layer components {
   .navbar {
-    @apply w-full flex justify-between items-center py-4 px-8 bg-[#ffffff10] backdrop-blur-sm border border-[#ffffff09] fixed z-[2];
+    @apply w-full flex justify-between items-center py-4 px-6 bg-[#ffffff10] backdrop-blur-sm border border-[#ffffff09] fixed z-[2] select-none;
   }
 
   .navbar-logo {
@@ -36,14 +36,35 @@
   }
 
   .nav-menu {
-    @apply flex justify-center items-center bg-blue-800 lg:hidden w-[35px] h-[35px] rounded-[50%];
+    @apply flex justify-center items-center lg:hidden rounded-[50%];
   }
 
-  .nav-menu svg {
-    @apply text-white w-[75%] h-[75%];
+  .menuBtn svg {
+    @apply text-gray-200 w-[30px] h-[30px] lg:hidden;
   }
 
-  .nav-menu div {
-    @apply fixed top-0 bottom-0 right-0 z-[5] p-4 w-[80%] h-[100vh] flex justify-end items-end flex-col;
+  .nav-menu .sideMenu {
+    @apply fixed top-0 bottom-0 right-0 z-[5] px-4 py-2 w-[80%] h-[100vh] bg-gray-900;
   }
+
+  .closeBtn {
+    @apply absolute right-0 bg-gray-900 mx-2;
+  }
+
+  .nav-menu ul {
+    @apply list-none m-0 p-0 w-full h-full flex justify-start items-start flex-col;
+  }
+
+  .nav-menu ul li{
+    @apply relative top-10 m-4;
+  }
+
+  .nav-menu ul svg {
+    @apply w-[35px] h-[35px] my-2 mx-4 ;
+  }
+
+  .nav-menu ul li a {
+    @apply uppercase font-[500];
+  }
+
 }
