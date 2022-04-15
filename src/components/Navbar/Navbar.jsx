@@ -5,12 +5,12 @@ import { images } from '../../constants'
 const Navbar = () => {
   return (
     <nav className='navbar'>
-      <div>
+      <div className='navbar-logo'>
         <img src={images.logo} alt="logo" />
       </div>
-      <ul>
+      <ul className='nav-list'>
         {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
-          <li key={`link-${item}`}>
+          <li className='nav-links' key={`link-${item}`}>
             <div/>
             <a href={`#${item}`}> {item} </a>
           </li>
