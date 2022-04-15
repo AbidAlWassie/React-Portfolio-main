@@ -16,7 +16,7 @@
   }
 
   .nav-list {
-    @apply flex;
+    @apply hidden lg:flex;
   }
 
   .nav-links {
@@ -28,10 +28,22 @@
   }
 
   .nav-links a {
-    @apply text-zinc-200 uppercase;
+    @apply text-zinc-200 uppercase transition-all duration-[200ms];
   }
 
   .nav-links a:hover {
     @apply text-indigo-400;
+  }
+
+  .nav-menu {
+    @apply flex justify-center items-center bg-blue-800 lg:hidden w-[35px] h-[35px] rounded-[50%];
+  }
+
+  .nav-menu svg {
+    @apply text-white w-[75%] h-[75%];
+  }
+
+  .nav-menu div {
+    @apply fixed top-0 bottom-0 right-0 z-[5] p-4 w-[80%] h-[100vh] flex justify-end items-end flex-col;
   }
 }
