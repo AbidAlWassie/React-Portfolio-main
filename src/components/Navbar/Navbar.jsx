@@ -30,7 +30,7 @@ const Navbar = () => {
         <HiOutlineMenu onClick={toggleNav} />
       </div>
 
-      <div className={toggle ? "nav-menu" : "nav-menu slideIn"}>
+      <div className={toggle ? "nav-menu" : "nav-menu hidden"}>
 
           
           <ul className='sideMenu'>

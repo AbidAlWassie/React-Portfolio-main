@@ -1,6 +1,11 @@
-.hidden {
-  display: none;
+.nav-menu {
+  transform: translateX(0deg) !important;
 }
+
+.nav-menu.hidden {
+  transform: translateX(100%) !important;
+}
+
 
 .block {
   display: block;
@@ -13,3 +18,4 @@
 .w-e {
   width: 80%;
 }
+
