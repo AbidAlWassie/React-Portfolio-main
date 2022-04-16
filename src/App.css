@@ -1,9 +1,22 @@
-.nav-menu {
-  transform: translateX(0deg) !important;
+html {
+  color-scheme: dark !important;
 }
 
-.nav-menu.hidden {
+.menuBtn {
+  display: flex;
+  margin-left: auto;
+  /* position: relative;
+  left: 28vw; */
+}
+
+.nav-menu.slideBack > .sideMenu {
+  transform: translateX(0%) !important;
+  transition: 150ms ease-in-out;
+}
+
+.nav-menu.slideIn > .sideMenu {
   transform: translateX(100%) !important;
+  transition: 150ms ease-in-out;
 }
 
 

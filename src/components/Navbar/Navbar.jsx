@@ -30,18 +30,18 @@ const Navbar = () => {
         <HiOutlineMenu onClick={toggleNav} />
       </div>
 
-      <div className={toggle ? "nav-menu" : "nav-menu hidden"}>
+      <div className={toggle ? "nav-menu slideIn" : "nav-menu slideBack"}>
 
           
           <ul className='sideMenu'>
             
             <div className='closeBtn'>
-            <HiX onClick={() => setToggle(false)} />
+            <HiX onClick={toggleNav} />
             </div>
 
             {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
               <li key={item}>
-                <a href={`#${item}`} onClick={() => setToggle(false)}> {item} </a>
+                <a href={`#${item}`} onClick={toggleNav}> {item} </a>
               </li>
             ))}
           </ul>
