@@ -5,3 +5,11 @@
 .block {
   display: block;
 }
+
+.w-0 {
+  width: 0;
+}
+
+.w-e {
+  width: 80%;
+}

@@ -44,7 +44,7 @@
   }
 
   .nav-menu .sideMenu {
-    @apply fixed top-0 bottom-0 right-0 z-[5] px-4 py-2 w-[80%] h-[100vh] bg-gray-900;
+    @apply absolute top-0 bottom-0 right-0 z-[5] px-4 py-2 w-[80%] h-[100vh] bg-gray-900;
   }
 
   .closeBtn {

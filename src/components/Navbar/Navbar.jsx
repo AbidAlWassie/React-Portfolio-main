@@ -30,8 +30,9 @@ const Navbar = () => {
         <HiOutlineMenu onClick={toggleNav} />
       </div>
 
-      <div className={toggle ? "nav-menu" : "nav-menu hidden"}>
+      <div className={toggle ? "nav-menu" : "nav-menu slideIn"}>
 
+          
           <ul className='sideMenu'>
             
             <div className='closeBtn'>
@@ -44,6 +45,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+
       </div>
 
     </nav>
