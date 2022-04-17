@@ -25,7 +25,7 @@
   }
 
   .nav-list {
-    @apply hidden lg:flex;
+    @apply hidden lg:flex ml-auto;
   }
 
   .nav-links {
@@ -76,4 +76,8 @@
     @apply uppercase font-[500];
   }
 
+  /* Header Section */
+  .header {
+    @apply flex;
+  }
 }
