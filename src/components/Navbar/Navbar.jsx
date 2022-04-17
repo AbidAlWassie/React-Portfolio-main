@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { HiOutlineMenu, HiX } from 'react-icons/hi'
 
-import { images } from '../../constants'
+// import { images } from '../../constants'
 
 const Navbar = () => {
 
@@ -15,7 +15,8 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
       <div className='navbar-logo'>
-        <img src={images.logo} alt="logo" />
+        
+      <div className='circle'><span className="firstLetter">A</span></div><span className="otherLetters" draggable="false">bid</span>
       </div>
       <ul className='nav-list'>
         {['home', 'about', 'work', 'skills', 'contact'].map((item) => (

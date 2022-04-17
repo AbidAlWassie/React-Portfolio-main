@@ -3,16 +3,25 @@
 @tailwind utilities;
 
 @layer components {
+  
   .navbar {
     @apply w-full flex justify-between items-center py-4 px-6 bg-[#ffffff10] backdrop-blur-sm border border-[#ffffff09] fixed z-[2] select-none;
   }
 
   .navbar-logo {
-    @apply flex justify-start items-center;
+    @apply flex justify-start items-center font-bold text-[20px] font-[Poppins];
   }
 
-  .navbar-logo img {
-    @apply w-[90px] h-[20px] 
+  .navbar-logo .circle {
+    @apply flex justify-center w-[30px] h-[30px] rounded-[50%] bg-[#008cff] z-[1];
+  }
+
+  .navbar-logo .firstLetter {
+    @apply text-[20px] text-white rounded-[50%] z-[1];
+  }
+
+  .navbar-logo .otherLetters {
+    @apply relative right-[6px] tracking-[0.6px] z-[2];
   }
 
   .nav-list {
