@@ -9,19 +9,30 @@
   }
 
   .navbar-logo {
-    @apply flex justify-start items-center font-bold text-[20px] font-[Poppins];
+    @apply flex justify-start items-center font-bold text-[20px] font-[Poppins] scale-[1.2];
   }
 
   .navbar-logo .circle {
-    @apply flex justify-center w-[30px] h-[30px] rounded-[50%] bg-[#008cff] z-[1];
+    @apply flex justify-center w-[30px] h-[30px] rounded-[50%] bg-[#008cff] z-[1] border-[3px] border-[#006fca];
+  }
+
+  .circle span {
+    @apply relative bottom-[3px];
+  }
+
+  .half-circle {
+    @apply absolute top-0 translate-x-[-25%] translate-y-[50%] 
+    rotate-[90deg] h-[15px] w-[30px] bg-[#006fca];
+
+    border-radius: 0 0 150px 150px;
   }
 
   .navbar-logo .firstLetter {
-    @apply text-[20px] text-white rounded-[50%] z-[1];
+    @apply text-white rounded-[50%] z-[1];
   }
 
   .navbar-logo .otherLetters {
-    @apply relative right-[6px] tracking-[0.6px] z-[2];
+    @apply relative right-[6.5px] tracking-[0.6px] z-[2];
   }
 
   .nav-list {

@@ -16,13 +16,13 @@ const Navbar = () => {
     <nav className='navbar'>
       <div className='navbar-logo'>
         
-      <div className='circle'><span className="firstLetter">A</span></div><span className="otherLetters" draggable="false">bid</span>
+      <div className='circle'><span className="firstLetter">A</span><div className="half-circle"></div></div>
+      <span className="otherLetters" draggable="false">bid</span>
       </div>
       <ul className='nav-list'>
         {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
           <li className='nav-links' key={`link-${item}`}>
             <a href={`#${item}`}> {item} </a>
-            <div/>
           </li>
         ))}
       </ul>
