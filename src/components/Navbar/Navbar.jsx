@@ -6,7 +6,7 @@ import { images } from '../../constants'
 
 const Navbar = () => {
 
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   const toggleNav = () => {
     toggle ? setToggle(false) : setToggle(true);

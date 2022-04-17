@@ -1,6 +1,9 @@
 html {
-  color-scheme: dark !important;
+  color-scheme: light !important;
+  background: rgb(22, 27, 41);
+  color: #fff;
 }
+
 
 .menuBtn {
   display: flex;
