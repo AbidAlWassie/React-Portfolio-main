@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { HiOutlineMenu, HiX } from 'react-icons/hi'
+import { MdOutlineDarkMode } from 'react-icons/md'
 
 // import { images } from '../../constants'
 
@@ -13,7 +14,8 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='navbar'>
+    <nav className='navbar w-full'>
+      <div className="container flex justify-between items-center mx-auto text-center">
       <div className='navbar-logo'>
         
       <div className='circle'><span className="firstLetter">A</span><div className="half-circle"></div></div>
@@ -21,11 +23,15 @@ const Navbar = () => {
       </div>
       <ul className='nav-list'>
         {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
-          <li className='nav-links' key={`link-${item}`}>
+          <li className='nav-link' key={`link-${item}`}>
             <a href={`#${item}`}> {item} </a>
           </li>
         ))}
       </ul>
+
+      <div className='toggleBtn'>
+        <MdOutlineDarkMode/>
+      </div>
 
       <div className='menuBtn'>
         <HiOutlineMenu onClick={toggleNav} />
@@ -49,8 +55,23 @@ const Navbar = () => {
 
       </div>
 
+    </div>
     </nav>
+    
   )
 }
+
+
+
+
+window.addEventListener("scroll", stickyNav);
+
+function stickyNav() {
+  var navbar = document.querySelector(".navbar");
+  navbar.classList.toggle("scrolled", window.pageYOffset > 0);
+  // console.log(window.pageYOffset > 0);
+}
+
+
 
 export default Navbar

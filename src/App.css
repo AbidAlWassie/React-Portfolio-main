@@ -1,12 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
 
+:root {
+  --hue-1: 257;
+  --hue-2: 47;
+  --bg-color: hsl(var(--hue-1), 100%, 97%);
+  --main-color-1: hsl(var(--hue-1), 69%, 50%);
+  --main-color-dark-1: hsl(var(--hue-1), 100%, 60%);
+  --main-color-2: hsl(var(--hue-2), 82%, 55%);
+  --bg-color-1: hsl(var(--hue-1), 100%, 97%);
+  --bg-color-2: #fff;
+  --bg-color-3: hsl(var(--hue-1), 100%, 98%);
+  --bg-color-transparent: rgb(255, 255, 255, 0.6);
+  --heading-color: hsl(var(--hue-1), 61%, 24%);
+  --text-color: hsl(var(--hue-1), 17%, 63%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html {
-  color-scheme: dark !important;
+  color-scheme: light !important;
   background: rgb(22, 27, 41);
   color: #fff;
     /* color-scheme: dark; */
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   scrollbar-color: #686868 #424242;
+}
+
+::selection {
+  background: hsla(var(--hue-1), 100%, 60%, 0.9);
+  color: #fff;
 }
 
 
@@ -29,8 +58,8 @@ html {
 
 
 .menuBtn {
-  display: flex;
-  margin-left: auto;
+  /* display: flex;
+  margin-left: auto; */
   /* position: relative;
   left: 28vw; */
 }

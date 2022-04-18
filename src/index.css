@@ -5,12 +5,20 @@
 @layer components {
   
   .navbar {
-    @apply w-full flex justify-between items-center py-4 px-6 bg-[#ffffff10] backdrop-blur-sm border border-[#ffffff09] fixed z-[2] select-none;
+    @apply w-full flex justify-between items-center backdrop-blur-sm border border-[#2a223d09] z-[2] select-none py-7 px-6 bg-transparent transition ease-in-out duration-300;
+  }
+
+  .navbar.scrolled {
+    @apply bg-[#ffffff10] py-4 shadow-[0_0_10_0px_rgba(0,_0,_0,_0.1)] fixed;
   }
 
   .navbar-logo {
     @apply flex justify-start items-center font-bold text-[20px] font-[Poppins] scale-[1.2];
   }
+
+  /* .navbar-logo.scrolled {
+    @apply scale-[1.3];
+  } */
 
   .navbar-logo .circle {
     @apply flex justify-center w-[30px] h-[30px] rounded-[50%] bg-[#008cff] z-[1] border-[3px] border-[#006fca];
@@ -36,23 +44,29 @@
   }
 
   .nav-list {
-    @apply hidden lg:flex ml-auto;
+    @apply hidden lg:flex mr-auto ml-12;
   }
 
-  .nav-links {
-    @apply mx-2 cursor-pointer;
+  .nav-link {
+    @apply mx-2 cursor-pointer transition relative;
   }
 
-  .nav-links div {
-    @apply w-[5] h-[5] bg-transparent rounded-[50%] mb-[5px];
+
+
+  .nav-link::after {
+    @apply content-[""] absolute w-full h-[10px] rounded-[5px] bg-[#8349ff] bottom-0 left-[-5px] z-[-1] opacity-[0.2] transition duration-300;
   }
 
-  .nav-links a {
-    @apply text-zinc-200 uppercase transition-all duration-[200ms];
+  .nav-link {
+    @apply text-zinc-200 uppercase transition-all font-normal duration-[200ms];
   }
 
-  .nav-links a:hover {
-    @apply text-indigo-400;
+  .nav-link:hover {
+    @apply text-white;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full opacity-[0.7];
   }
 
   .nav-menu {
@@ -60,7 +74,15 @@
   }
 
   .menuBtn svg {
-    @apply text-gray-200 w-[30px] h-[30px] lg:hidden;
+    @apply text-gray-200 w-[30px] h-[30px];
+  }
+
+  .menuBtn {
+    @apply lg:hidden ml-6;
+  }
+
+  .toggleBtn {
+    @apply w-7 h-7 bg-slate-500 text-white rounded-[50%] flex justify-center items-center text-[1.2rem] cursor-pointer shadow-[0_0_10_0px_rgba(0,_0,_0,_0.05)] ml-auto;
   }
 
   .nav-menu .sideMenu {
