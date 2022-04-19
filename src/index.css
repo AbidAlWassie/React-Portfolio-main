@@ -5,11 +5,11 @@
 @layer components {
   
   .navbar {
-    @apply w-full flex justify-between items-center backdrop-blur-sm border border-[#2a223d09] z-[2] select-none py-7 px-6 bg-transparent transition ease-in-out duration-300;
+    @apply w-full flex justify-between items-center backdrop-blur-sm border border-[#2a223d09] z-[2] select-none py-7 px-6 bg-transparent transition-all ease-in-out duration-200;
   }
 
   .navbar.scrolled {
-    @apply bg-[#ffffff10] py-4 shadow-[0_0_10_0px_rgba(0,_0,_0,_0.1)] fixed;
+    @apply bg-[#ffffff10] py-4 shadow-[0_0_10_0px_rgba(0,_0,_0,_0.1)] fixed transition ease-in-out duration-300;
   }
 
   .navbar-logo {
@@ -111,6 +111,8 @@
 
   /* Header Section */
   .header {
-    @apply flex;
+    @apply p-[120px_0];
   }
+
+  
 }

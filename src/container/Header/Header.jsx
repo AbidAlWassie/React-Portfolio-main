@@ -4,20 +4,24 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className='header'>
-      <div className="container flex justify-between items-center mx-auto text-center">
+    <header className="header">
+      <div className="container flex justify-between items-center mx-auto">
 
       <div className="showcase-info">
         <h3 className="sub-heading">Web Developer</h3>
         <h3 className="heading">Abid Al Wassie</h3>
-        <p>I'm a freelance web developer.</p>
+        <p className="text">I'm a freelance web developer.</p>
+        <div className="cta">
+          <a href="null" className="btn">Contact Me</a>
+          <a href="null" className="btn secondary-btn">Download CV</a>
+        </div>
       </div>
 
       <div className="showcase-img">
       </div>
 
       </div>
-    </div>
+    </header>
   )
 }
 
