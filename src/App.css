@@ -107,14 +107,14 @@ html {
 }
 
 .text {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   margin: .2rem 0;
 }
 
 /* Header Styles */
 .header.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
   height: calc(100vh - 120px);
   max-height: 600px;
 }
@@ -181,4 +181,27 @@ html {
 
 .btn.secondary-btn:hover::before {
   width: 100%;
+}
+
+.showcase-img {
+  position: relative;
+  min-height: calc(100% + 120px);
+  background: linear-gradient(124deg,
+  var(--main-color-1) 50%,
+  var(--main-color-2) 50%
+  );
+  margin-top: -220px;
+  border-radius: 0 0 80px 80px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.showcase-img .person {
+  width: 80%;
+  /* position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); */
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 // import { motion } from 'framer-motion'
-// import { images } from '../../constants'
+import { images } from '../../constants'
 
 const Header = () => {
   return (
@@ -12,12 +12,13 @@ const Header = () => {
         <h3 className="heading">Abid Al Wassie</h3>
         <p className="text">I'm a freelance web developer.</p>
         <div className="cta">
-          <a href="null" className="btn">Contact Me</a>
-          <a href="null" className="btn secondary-btn">Download CV</a>
+          <a href="mailto:abidalwassie@outlook.com" className="btn">Contact Me</a>
+          <a href={images.email} download className="btn secondary-btn">Download CV</a>
         </div>
       </div>
 
       <div className="showcase-img">
+        <img src={images.profile1} className="person" alt="Abid" />
       </div>
 
       </div>
