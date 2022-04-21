@@ -21,6 +21,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "svgr": "npx @svgr/cli src/assets/svgs --out-dir src/assets/vectors --icon",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -43,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "@svgr/cli": "^6.2.1",
     "tailwindcss": "^3.0.24"
   }
 }

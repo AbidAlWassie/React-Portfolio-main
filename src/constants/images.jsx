@@ -8,10 +8,10 @@ import square1 from '../assets/square1.png';
 import square2 from '../assets/square2.png';
 import triangle from '../assets/triangle.png';
 import dots from '../assets/dots.png';
-import prototype from '../assets/prototype.svg';
-import research from '../assets/research.svg';
-import testing from '../assets/testing.svg';
-import design from '../assets/design.svg';
+import prototype from '../assets/svgs/prototype.svg';
+import research from '../assets/svgs/research.svg';
+import testing from '../assets/svgs/testing.svg';
+import design from '../assets/svgs/design.svg';
 
 import email from '../assets/email.png';
 import mobile from '../assets/mobile.png';

@@ -15,6 +15,7 @@ function App() {
   });
   sr.reveal(".showcase-info", {delay: 600});
   sr.reveal(".showcase-img", {origin: "top", delay: 700});
+  sr.reveal(".square", {origin: "left", delay: 900});
 }, []);
 
   return (

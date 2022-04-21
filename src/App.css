@@ -256,3 +256,67 @@ html {
 .about .text {
   margin: 2rem 0 0 0;
 }
+
+.about-flex {
+  display: grid;
+  grid-template-columns: 190px 190px;
+  grid-template-rows: 190px 190px;
+  justify-content: center;
+  column-gap: 2.5rem;
+  row-gap: 100px;
+  /* margin-right: 2rem; */
+}
+
+.about-card {
+  background: rgb(47, 47, 66);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.about-card:nth-child(1) {
+  border-radius: 40px 40px 5px 40px;
+}
+
+.about-card:nth-child(2) {
+  margin-top: 50px;
+  border-radius: 40px 40px 40px 5px;
+}
+
+.about-card:nth-child(3) {
+  margin-top: -50px;
+  border-radius: 40px 5px 40px 40px;
+}
+
+.about-card:nth-child(4) {
+  border-radius: 5px 40px 40px 40px;
+}
+
+.about-card h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 1rem;
+  letter-spacing: 0.3px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+.st0 {
+  fill: var(--bg-color-3);
+}
+
+.st1 {
+  fill: #c5e3ea;
+}
+
+.st2 {
+  fill: var(--heading-color);
+}
