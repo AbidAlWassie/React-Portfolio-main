@@ -112,6 +112,11 @@ html {
 }
 
 /* Header Styles */
+
+.header {
+  position: relative;
+}
+
 .header.container {
   /* display: grid;
   grid-template-columns: repeat(2, 1fr); */
@@ -125,6 +130,7 @@ html {
 
 .header .heading {
   font-size: 3.5rem;
+  
 }
 
 .header .text {
@@ -196,12 +202,55 @@ html {
   display: flex;
   justify-content: center;
   width: 50%;
+  /* width: 45%; */
 }
 
 .showcase-img .person {
   width: 80%;
+  /* width: 100%; */
   /* position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%); */
+}
+
+.dots {
+  width: 112px;
+}
+
+.square {
+  width: 70px;
+}
+
+.header .circle {
+  position: absolute;
+  width: 190px;
+  left: 0;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.header .dots {
+  position: absolute;
+  left: 100%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.header .square {
+  position: absolute;
+  left: 25%;
+  bottom: 120px;
+  transform: translate(-50%, -50%);
+}
+
+/* About Styles */
+
+.about {
+  position: relative;
+  padding: 7rem 0;
+}
+
+.about .text {
+  margin: 2rem 0 0 0;
 }

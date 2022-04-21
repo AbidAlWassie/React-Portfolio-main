@@ -1,3 +1,18 @@
+import profile1 from '../assets/profile1.png';
+import profile2 from '../assets/profile2.png';
+import profile3 from '../assets/profile3.png';
+import circle from '../assets/circle.svg';
+import circle1 from '../assets/circle1.png';
+import circle2 from '../assets/circle2.png';
+import square1 from '../assets/square1.png';
+import square2 from '../assets/square2.png';
+import triangle from '../assets/triangle.png';
+import dots from '../assets/dots.png';
+import prototype from '../assets/prototype.svg';
+import research from '../assets/research.svg';
+import testing from '../assets/testing.svg';
+import design from '../assets/design.svg';
+
 import email from '../assets/email.png';
 import mobile from '../assets/mobile.png';
 import api from '../assets/api.png';
@@ -23,9 +38,7 @@ import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 
-import profile1 from '../assets/profile1.png';
-import profile2 from '../assets/profile2.png';
-import circle from '../assets/circle.svg';
+
 import logo from '../assets/logo.png';
 
 import adidas from '../assets/adidas.png';
@@ -37,6 +50,22 @@ import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
 const data = {
+  profile1,
+  profile2,
+  profile3,
+  circle,
+  circle1,
+  circle2,
+  square1,
+  square2,
+  triangle,
+  dots,
+  prototype,
+  research,
+  testing,
+  design,
+
+  logo,
   email,
   mobile,
   api,
@@ -60,10 +89,6 @@ const data = {
   about02,
   about03,
   about04,
-  profile1,
-  profile2,
-  circle,
-  logo,
   adidas,
   amazon,
   asus,
