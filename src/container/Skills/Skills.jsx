@@ -14,16 +14,15 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          {/* <div className="skills-wrap"> */}
             <div className="skills-wrap">
 
               <div className="skill">
                 <div className="sk-progress">
-                  <svg>
-                    <circle cx={75} cy={75} r={68}/>
+                  <svg className="p-circle1">
+                    <circle className="p-circle1" cx={75} cy={75} r={68}/>
                   </svg>
                   <h2 className="counter">
-                    <span>89</span>%
+                    <span data-target="90">0</span>%
                   </h2>
                 </div>
                 <div className="sk-title">HTML5</div>
@@ -31,11 +30,11 @@ const Skills = () => {
 
               <div className="skill">
                 <div className="sk-progress">
-                  <svg>
-                    <circle cx={75} cy={75} r={68}/>
+                  <svg className="p-circle2">
+                    <circle className="p-circle2" cx={75} cy={75} r={68}/>
                   </svg>
                   <h2 className="counter">
-                    <span>89</span>%
+                    <span data-target="80">0</span>%
                   </h2>
                 </div>
                 <div className="sk-title">CSS3</div>
@@ -43,11 +42,11 @@ const Skills = () => {
 
               <div className="skill">
                 <div className="sk-progress">
-                  <svg>
-                    <circle cx={75} cy={75} r={68}/>
+                  <svg className="p-circle3">
+                    <circle className="p-circle3" cx={75} cy={75} r={68}/>
                   </svg>
                   <h2 className="counter">
-                    <span>89</span>%
+                    <span data-target="70">0</span>%
                   </h2>
                 </div>
                 <div className="sk-title">JavaScript</div>
@@ -55,21 +54,22 @@ const Skills = () => {
 
               <div className="skill">
                 <div className="sk-progress">
-                  <svg>
-                    <circle cx={75} cy={75} r={68}/>
+                  <svg className="p-circle4">
+                    <circle className="p-circle4" cx={75} cy={75} r={68}/>
                   </svg>
                   <h2 className="counter">
-                    <span>89</span>%
+                    <span data-target="80">0</span>%
                   </h2>
                 </div>
                 <div className="sk-title">UI Design</div>
               </div>
             </div>
-          {/* </div> */}
         </div>
       </div>
     </div>
   )
 }
+
+
 
 export default Skills

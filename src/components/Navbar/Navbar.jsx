@@ -61,17 +61,4 @@ const Navbar = () => {
   )
 }
 
-
-
-
-window.addEventListener("scroll", stickyNav);
-
-function stickyNav() {
-  var navbar = document.querySelector(".navbar");
-  navbar.classList.toggle("scrolled", window.pageYOffset > 0);
-  // console.log(window.pageYOffset > 0);
-}
-
-
-
 export default Navbar

@@ -58,12 +58,6 @@ html {
 }
 
 
-.menuBtn {
-  /* display: flex;
-  margin-left: auto; */
-  /* position: relative;
-  left: 28vw; */
-}
 
 .nav-menu.slideBack > .sideMenu {
   transform: translateX(0%) !important;
@@ -368,7 +362,7 @@ html {
 .skills-wrap {
   display: grid;
   grid-template-columns: repeat(4, 150px);
-  margin-top: 2rem;
+  margin-top: 4rem;
   justify-content: space-between;
 }
 
@@ -384,6 +378,7 @@ html {
   width: 150px;
   height: 150px;
   position: relative;
+  transform: scale(1.2);
 }
 
 .sk-progress svg {
@@ -396,12 +391,38 @@ html {
 }
 
 .sk-progress svg circle {
-  fill: #2D263C;
-  stroke-width: 5px;
-  stroke: #602CFB;
+  /* fill: #2D263C;
+  stroke: #602CFB; */
+  stroke-width: 7px;
   stroke-dasharray: 427;
-  stroke-dashoffset: 50;
+  stroke-dashoffset: 427;
   stroke-linecap: round;
+}
+
+.p-circle1 {
+  fill: rgb(229, 76, 33, 0.2);
+  stroke: rgb(229, 76, 33, 0.7);
+}
+
+.p-circle2 {
+  fill: rgba(33, 141, 229, 0.2);
+  stroke: rgb(33, 141, 229, 0.7);
+}
+
+.p-circle3 {
+  fill: rgb(247, 223, 30, 0.2);
+  stroke: rgb(247, 223, 30, 0.7);
+}
+
+.p-circle4 {
+  fill: #2D263C;
+  stroke: #602CFB;
+}
+
+@keyframes progress {
+  to {
+    stroke-dashoffset: var(--target);
+  }
 }
 
 .counter {
