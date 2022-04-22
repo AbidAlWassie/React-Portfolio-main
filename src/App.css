@@ -31,6 +31,7 @@ html {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   scrollbar-color: #686868 #424242;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 ::selection {
