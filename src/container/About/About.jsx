@@ -11,25 +11,27 @@ const About = () => {
       <div className="about-flex flex-[1]">
 
         <div className="about-card">
-          <SvgResearch/>
+        <SvgDesign/>
+
+          {/* <SvgResearch/> */}
           <h3>
             User Research
           </h3>
         </div>
         <div className="about-card">
-          <SvgDesign/>
+          <SvgPrototype/>
           <h3>
             Visual Design
           </h3>
         </div>
         <div className="about-card">
-          <SvgTesting/>
+          <SvgResearch/>
           <h3>
             User Testing
           </h3>
         </div>
         <div className="about-card">
-          <SvgPrototype/>
+        <SvgTesting/>
           <h3>
             Prototyping
           </h3>
