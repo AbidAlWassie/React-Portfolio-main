@@ -347,3 +347,83 @@ html {
 .st2 {
   fill: #d6dffa;
 }
+
+/* Skills Styles */
+
+.skills {
+  overflow: hidden;
+}
+
+.skills-box {
+  background: #272034;
+  padding: 5rem 6rem;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.box-desc {
+  display: flex;
+}
+
+.skills-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sk-progress {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+.sk-progress svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.sk-progress svg circle {
+  fill: #2D263C;
+  stroke-width: 5px;
+  stroke: #602CFB;
+  stroke-dasharray: 427;
+  stroke-dashoffset: 50;
+  stroke-linecap: round;
+}
+
+.counter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-weight: 400;
+  font-size: 0.9rem;
+  /* color: var(--heading-color); */
+}
+
+.counter span {
+  font-size: 2.45rem;
+  /* color: var(--heading-color); */
+}
+
+.sk-title {
+  /* color: var(--heading-color); */
+  margin-top: 00.75rem;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+}
