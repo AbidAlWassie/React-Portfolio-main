@@ -1,4 +1,5 @@
 import React from 'react'
+import { images } from '../../constants'
 
 const Skills = () => {
   return (
@@ -21,11 +22,14 @@ const Skills = () => {
                   <svg className="p-circle1">
                     <circle className="p-circle1" cx={75} cy={75} r={68}/>
                   </svg>
+                  <div className="techLogo">
+                    <img src={images.html} alt="" />
+                  </div>
                   <h2 className="counter">
                     <span data-target="90">0</span>%
                   </h2>
-                </div>
                 <div className="sk-title">HTML5</div>
+                </div>
               </div>
 
               <div className="skill">
@@ -33,11 +37,14 @@ const Skills = () => {
                   <svg className="p-circle2">
                     <circle className="p-circle2" cx={75} cy={75} r={68}/>
                   </svg>
+                  <div className="techLogo">
+                    <img src={images.css} alt="" />
+                  </div>
                   <h2 className="counter">
                     <span data-target="80">0</span>%
                   </h2>
-                </div>
                 <div className="sk-title">CSS3</div>
+                </div>
               </div>
 
               <div className="skill">
@@ -45,11 +52,14 @@ const Skills = () => {
                   <svg className="p-circle3">
                     <circle className="p-circle3" cx={75} cy={75} r={68}/>
                   </svg>
+                  <div className="techLogo">
+                    <img src={images.javascript} alt="" />
+                  </div>
                   <h2 className="counter">
                     <span data-target="70">0</span>%
                   </h2>
-                </div>
                 <div className="sk-title">JavaScript</div>
+                </div>
               </div>
 
               <div className="skill">
@@ -57,11 +67,14 @@ const Skills = () => {
                   <svg className="p-circle4">
                     <circle className="p-circle4" cx={75} cy={75} r={68}/>
                   </svg>
+                  <div className="techLogo">
+                    <img src={images.react} alt="" />
+                  </div>
                   <h2 className="counter">
                     <span data-target="80">0</span>%
                   </h2>
+                <div className="sk-title">React</div>
                 </div>
-                <div className="sk-title">UI Design</div>
               </div>
             </div>
         </div>
