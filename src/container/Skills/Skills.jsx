@@ -26,7 +26,7 @@ const Skills = () => {
                     <img src={images.html} alt="" />
                   </div>
                   <h2 className="counter">
-                    <span data-target="90">0</span>%
+                    <span data-target="95">0</span>%
                   </h2>
                 <div className="sk-title">HTML5</div>
                 </div>
@@ -41,7 +41,7 @@ const Skills = () => {
                     <img src={images.css} alt="" />
                   </div>
                   <h2 className="counter">
-                    <span data-target="80">0</span>%
+                    <span data-target="90">0</span>%
                   </h2>
                 <div className="sk-title">CSS3</div>
                 </div>
@@ -56,7 +56,7 @@ const Skills = () => {
                     <img src={images.javascript} alt="" />
                   </div>
                   <h2 className="counter">
-                    <span data-target="70">0</span>%
+                    <span data-target="80">0</span>%
                   </h2>
                 <div className="sk-title">JavaScript</div>
                 </div>
