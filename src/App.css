@@ -361,7 +361,7 @@ html {
 
 .skills-wrap {
   display: grid;
-  grid-template-columns: repeat(4, 150px);
+  grid-template-columns: repeat(5, 150px);
   margin-top: 4rem;
   justify-content: space-between;
 }
@@ -454,6 +454,11 @@ html {
 .p-circle4 {
   fill: rgba(128, 222, 234, 0.2);
   stroke: rgba(128, 222, 234, 0.9);
+}
+
+.p-circle5 {
+  fill: rgba(255, 45, 32, 0.2);
+  stroke: rgba(255, 45, 32, 0.9);
 }
 
 @keyframes progress {

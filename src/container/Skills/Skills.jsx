@@ -71,11 +71,27 @@ const Skills = () => {
                     <img src={images.react} alt="" />
                   </div>
                   <h2 className="counter">
-                    <span data-target="80">0</span>%
+                    <span data-target="45">0</span>%
                   </h2>
                 <div className="sk-title">React</div>
                 </div>
               </div>
+
+              <div className="skill">
+                <div className="sk-progress">
+                  <svg className="p-circle5">
+                    <circle className="p-circle5" cx={75} cy={75} r={68}/>
+                  </svg>
+                  <div className="techLogo">
+                    <img src={images.laravel} alt="" />
+                  </div>
+                  <h2 className="counter">
+                    <span data-target="65">0</span>%
+                  </h2>
+                <div className="sk-title">Laravel</div>
+                </div>
+              </div>
+
             </div>
         </div>
       </div>
