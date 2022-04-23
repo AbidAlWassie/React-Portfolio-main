@@ -1,6 +1,6 @@
 [Run It](https://abidalwassie.github.io/React-Portfolio-main/)
 
-echo "# React-Portfolio-master" >> README.md
+<!-- echo "# React-Portfolio-master" >> README.md
 
 git init
 
@@ -27,3 +27,4 @@ git push -u origin master
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
 
+ -->
