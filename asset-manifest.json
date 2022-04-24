@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Portfolio-main/static/css/main.9dad4b21.css",
-    "main.js": "/React-Portfolio-main/static/js/main.26af0a08.js",
+    "main.css": "/React-Portfolio-main/static/css/main.90ff3ed9.css",
+    "main.js": "/React-Portfolio-main/static/js/main.fbf8d260.js",
     "static/js/787.c9d303c8.chunk.js": "/React-Portfolio-main/static/js/787.c9d303c8.chunk.js",
     "static/media/profile3.png": "/React-Portfolio-main/static/media/profile3.9a0e66c0d9e674b03681.png",
     "static/media/profile2.png": "/React-Portfolio-main/static/media/profile2.7dd980c58d3eb3761cb6.png",
@@ -13,6 +13,7 @@
     "static/media/spotify.png": "/React-Portfolio-main/static/media/spotify.2b5e9be1eb1ab501e7cd.png",
     "static/media/nb.png": "/React-Portfolio-main/static/media/nb.98f3253e32cc67a4cb5e.png",
     "static/media/asus.png": "/React-Portfolio-main/static/media/asus.514bc34955008a92e09f.png",
+    "static/media/MySQL2.png": "/React-Portfolio-main/static/media/MySQL2.1703cb1c835c351750ba.png",
     "static/media/laravel.png": "/React-Portfolio-main/static/media/laravel.c58124813fef49d3fa26.png",
     "static/media/adidas.png": "/React-Portfolio-main/static/media/adidas.83df8153294f9137d308.png",
     "static/media/bolt.png": "/React-Portfolio-main/static/media/bolt.64e7d9d30ece478ef3a0.png",
@@ -37,12 +38,12 @@
     "static/media/design.svg": "/React-Portfolio-main/static/media/design.e52726c29812d0a17e3e09ac9fc1f54e.svg",
     "index.html": "/React-Portfolio-main/index.html",
     "static/media/circle.svg": "/React-Portfolio-main/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
-    "main.9dad4b21.css.map": "/React-Portfolio-main/static/css/main.9dad4b21.css.map",
-    "main.26af0a08.js.map": "/React-Portfolio-main/static/js/main.26af0a08.js.map",
+    "main.90ff3ed9.css.map": "/React-Portfolio-main/static/css/main.90ff3ed9.css.map",
+    "main.fbf8d260.js.map": "/React-Portfolio-main/static/js/main.fbf8d260.js.map",
     "787.c9d303c8.chunk.js.map": "/React-Portfolio-main/static/js/787.c9d303c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9dad4b21.css",
-    "static/js/main.26af0a08.js"
+    "static/css/main.90ff3ed9.css",
+    "static/js/main.fbf8d260.js"
   ]
 }
