@@ -127,7 +127,6 @@ html {
 
 .header .heading {
   font-size: 3.5rem;
-  
 }
 
 .header .text {
@@ -135,7 +134,7 @@ html {
 }
 
 .cta {
-  margin-top: 3.5rem;
+  margin-top: 1.5rem;
   display: flex;
   align-items: center;
 }
@@ -362,17 +361,19 @@ html {
 .skills-wrap {
   display: grid;
   grid-template-columns: repeat(5, 150px);
-  margin-top: 4rem;
   justify-content: space-between;
 }
 
 
-.skills {
+.skill {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 4rem;
 }
+
+
 
 .techLogo {
   width: 50px;
@@ -410,12 +411,7 @@ html {
   font-size: 1rem;
 }
 
-.sk-progress {
-  width: 150px;
-  height: 150px;
-  position: relative;
-  transform: scale(1.2);
-}
+
 
 .sk-progress svg {
   position: absolute;
@@ -461,9 +457,30 @@ html {
   stroke: rgba(255, 45, 32, 0.9);
 }
 
+/* .p-circle6 {
+  fill: rgba(242, 145, 17, 0.2);
+  stroke: rgba(242, 145, 17, 0.9);
+}
+
+.p-circle7 {
+  fill: rgba(1, 181, 213, 0.2);
+  stroke: rgba(1, 181, 213, 0.9);
+}
+
+.p-circle8 {
+  fill: rgba(3, 169, 244, 0.2);
+  stroke: rgba(3, 169, 244, 0.9);
+} */
+
 @keyframes progress {
   to {
     stroke-dashoffset: var(--target);
   }
+}
+
+/* Services Styles */
+.services {
+  position: relative;
+  padding: 7rem 0;
 }
 

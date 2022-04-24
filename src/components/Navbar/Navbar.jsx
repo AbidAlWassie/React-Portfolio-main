@@ -22,7 +22,7 @@ const Navbar = () => {
       <span className="otherLetters" draggable="false">bid</span>
       </div>
       <ul className='nav-list'>
-        {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+        {['home', 'about', 'work', 'skills', 'services', 'contact'].map((item) => (
           <li className='nav-link' key={`link-${item}`}>
             <a href={`#${item}`}> {item} </a>
           </li>

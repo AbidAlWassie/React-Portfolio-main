@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer components {
+
+  img {
+    @apply select-none;
+  }
+
+  .about-card,.btn,.sub-heading {
+    @apply select-none;
+  }
   
   .navbar {
     @apply w-full flex justify-between items-center z-[2] select-none py-7 px-6 bg-transparent transition-all ease-in-out duration-200;
@@ -114,5 +122,57 @@
     @apply p-[120px_0];
   }
 
+  /* Skills Section */
+
+  .skills-wrap {
+    @apply select-none;
+  }
   
+  .sk-progress {
+    @apply w-[150px] h-[150px] relative scale-[1] xl:scale-[1.2]
+  }
+
+  /* Services Section */
+
+  .services .container {
+    @apply grid grid-cols-[1fr_1.3fr] gap-x-[6rem];
+  }
+
+
+  .services .heading {
+    @apply my-8;
+  }
+
+  .milestones {
+    @apply flex w-full items-center text-center justify-start;
+  }
+
+  .milestones .ml {
+    @apply mr-16 my-4;
+  }
+
+  .milestones h2 {
+    @apply text-[#6D33FF] text-[1.3rem] font-bold;
+  }
+
+  .milestones h2 span {
+    @apply text-[2rem] leading-[1.2] mr-[0.1rem];
+  }
+
+  .milestones h5 {
+    @apply leading-[0.9] font-[500] text-[0.95rem];
+  }
+
+  .services-grid {
+    @apply grid grid-cols-[1fr_1fr] gap-x-8 gap-y-[4rem];
+  }
+
+  .service-card {
+    @apply bg-[#272034] rounded-[15px] py-10 px-[2.1rem] flex flex-col items-start justify-between min-h-[280px];
+  }
+
+  .service-card h3 {
+    @apply text-white font-medium text-[1.05rem];
+  }
+
 }

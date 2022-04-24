@@ -3,7 +3,7 @@ import { images } from '../../constants'
 
 const Skills = () => {
   return (
-    <div className="about" id="about">
+    <div className="skills" id="skills">
       <div className="container flex justify-between items-center mx-auto">
         <div className="skills-box">
           <div className="box-heading">
@@ -91,6 +91,51 @@ const Skills = () => {
                 <div className="sk-title">Laravel</div>
                 </div>
               </div>
+
+              {/* <div className="skill">
+                <div className="sk-progress">
+                  <svg className="p-circle6">
+                    <circle className="p-circle6" cx={75} cy={75} r={68}/>
+                  </svg>
+                  <div className="techLogo">
+                    <img src={images.mysql} alt="" />
+                  </div>
+                  <h2 className="counter">
+                    <span data-target="90">0</span>%
+                  </h2>
+                <div className="sk-title">MySQL</div>
+                </div>
+              </div>
+
+              <div className="skill">
+                <div className="sk-progress">
+                  <svg className="p-circle7">
+                    <circle className="p-circle7" cx={75} cy={75} r={68}/>
+                  </svg>
+                  <div className="techLogo">
+                    <img src={images.tailwind} alt="" />
+                  </div>
+                  <h2 className="counter">
+                    <span data-target="90">0</span>%
+                  </h2>
+                <div className="sk-title">Tailwind</div>
+                </div>
+              </div>
+
+              <div className="skill">
+                <div className="sk-progress">
+                  <svg className="p-circle8">
+                    <circle className="p-circle8" cx={75} cy={75} r={68}/>
+                  </svg>
+                  <div className="techLogo">
+                    <img src={images.flutter} alt="" />
+                  </div>
+                  <h2 className="counter">
+                    <span data-target="30">0</span>%
+                  </h2>
+                <div className="sk-title">Flutter</div>
+                </div>
+              </div> */}
 
             </div>
         </div>

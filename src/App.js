@@ -1,6 +1,6 @@
 import {useEffect} from 'react';
 import './App.css';
-import { About, Footer, Header, Skills, Testimonials, Work } from './container';
+import { About, Footer, Header, Services, Skills, Testimonials, Work } from './container';
 import { Navbar } from './components';
 
 import scrollreveal from 'scrollreveal'
@@ -25,6 +25,7 @@ function App() {
       <About />
       <Work />
       <Skills />
+      <Services />
       <Testimonials />
       <Footer />
     </div>
@@ -38,37 +39,41 @@ function stickyNav() {
   var navbar = document.querySelector(".navbar");
   navbar.classList.toggle("scrolled", window.pageYOffset > 0);
 }
-window.addEventListener("scroll", stickyNav);
-
-window.addEventListener("scroll", () => {
-  if (!skillsPlayed) loadSkills();
-});
+// window.addEventListener("scroll", stickyNav);
 
 let skillsPlayed = false;
+let mlPlayed = false;
+
+window.addEventListener("scroll", () => {
+  stickyNav();
+
+  if (!skillsPlayed) loadSkills();
+
+  if (!mlPlayed) mlCounter();
+});
+
+function updateCount(num, maxNum) {
+  let currentNum = +num.innerText;
+
+  if (currentNum < maxNum) {
+    num.innerText = currentNum + 1;
+    setTimeout(() => {
+      updateCount(num, maxNum);
+    }, 12);
+  }
+}
+
+
+
 
 
 function loadSkills() {
-  // const firstSkill = document.querySelector(".skill:first-child");
   const skCounters = document.querySelectorAll(".counter span");
   const progressBars = document.querySelectorAll(".sk-progress svg circle");
   // const scrollable =  document.documentElement.scrollHeight - window.innerHeight;
   
-    
     const scrolled = window.scrollY;
 
-    function updateCount(num, maxNum) {
-      let currentNum = +num.innerText;
-
-      if (currentNum < maxNum) {
-        num.innerText = currentNum + 1;
-        setTimeout(() => {
-          updateCount(num, maxNum);
-        }, 12);
-      }
-    }
-
-
-    
     if (scrolled >= 1200) {
       
       for (let i = 0; i < skCounters.length; i++) {
@@ -85,7 +90,6 @@ function loadSkills() {
           updateCount(skCounters[i], cvalue);
         }, 400);
       }
-      
 
       setTimeout(() => {
         window.removeEventListener("scroll", loadSkills);
@@ -94,15 +98,32 @@ function loadSkills() {
 }
 // End
 
-// Progress Bar Config
-// const skCounters = document.querySelector(".counter span");
-// const progressBars = document.querySelector(".skills svg circle");
+
+// Services Milestones Counter Animation
+
+// console.log(mlCounters);
 
 
-// window.addEventListener("scroll", () => {
-//   
-// });
+function mlCounter() {
+  // let mlSection = document.querySelectorAll(".milestones");
+  let mlCounters = document.querySelectorAll(".number span");
+  
+  
+  const scrolled = window.scrollY;
+  
+  if (scrolled >= 1750) {
+    // console.log(mlCounters.length);
+    
+    for (let i = 0; i < mlCounters.length; i++) {
+      mlPlayed = true;
 
-
+      let mvalue = Number(mlCounters[i].dataset.target);
+      setTimeout(() => {
+        updateCount(mlCounters[i], mvalue);
+      }, 1000);
+    }
+    
+  }
+}
 
 export default App;

@@ -22,6 +22,8 @@ import css from '../assets/css.png';
 import javascript from '../assets/javascript.png';
 import react from '../assets/react.png';
 import laravel from '../assets/laravel.png';
+import tailwind from '../assets/tailwind.png';
+import mysql from '../assets/MySQL2.png';
 import figma from '../assets/figma.png';
 import flutter from '../assets/flutter.png';
 import git from '../assets/git.png';
@@ -76,6 +78,8 @@ const data = {
   javascript,
   react,
   laravel,
+  tailwind,
+  mysql,
   git,
   figma,
   flutter,
