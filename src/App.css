@@ -484,3 +484,38 @@ html {
   padding: 7rem 0;
 }
 
+/* Work Section */
+
+.portfolio-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portfolio-title {
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  justify-content: space-between; */
+  padding-bottom: 1rem;
+}
+
+/* .filter-btns {
+
+} */
+
+.filter-btn {
+  display: inline-block;
+  color: white;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  margin-left: 1.3rem;
+  /* font-family: inherit; */
+  text-transform: uppercase;
+}
