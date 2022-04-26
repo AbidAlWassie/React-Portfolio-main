@@ -193,6 +193,28 @@
 
   /* Contact Section */
 
+  .social-container-lg {
+    @apply my-12;
+  }
+
+  .social-icons-lg {
+    @apply flex justify-start items-center gap-6 my-4;
+  }
+  
+  .social-icons-lg a {
+    @apply min-w-[2rem] min-h-[2rem] text-[#ffffff93];
+  }
+  
+
+  .social-icons-lg a:hover svg {
+    @apply min-w-[2rem] min-h-[2rem] text-[#ffffffd0];
+    cursor: pointer;
+  }
+
+  .social-icons-lg a svg {
+    @apply min-w-[2rem] min-h-[2rem] text-[#ffffff93] duration-300;
+  }
+
   .contact-form {
     @apply bg-[#231d30] rounded-[20px] p-[3.5rem_3rem] flex flex-col;
   }
@@ -202,7 +224,15 @@
   }
 
   .form-input {
-    @apply inline-block py-[1.5rem] px-[0.9rem] w-full rounded-[17px] bg-[#2B243A];
+    @apply inline-block py-[1.5rem] px-[0.9rem] w-full rounded-[17px] bg-[#2B243A] border-[2px] border-transparent transition-all;
+  }
+
+  .form-input:hover {
+    @apply brightness-[1.1];
+  }
+
+  .form-input:focus {
+    @apply brightness-[1.2] border-[#9554ff96];
   }
 
   textarea.form-input {

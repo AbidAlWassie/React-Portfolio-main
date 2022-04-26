@@ -14,9 +14,9 @@ function App() {
     distance: '60px',
     duration: 2500,
   });
-  sr.reveal(".showcase-info", {delay: 600});
-  sr.reveal(".showcase-img", {origin: "top", delay: 700});
-  sr.reveal(".square", {origin: "left", delay: 900});
+  sr.reveal(".showcase-info", {delay: 200});
+  sr.reveal(".showcase-img", {origin: "top", delay: 400});
+  sr.reveal(".square", {origin: "left", delay: 600});
 }, []);
 
 useEffect(() => {

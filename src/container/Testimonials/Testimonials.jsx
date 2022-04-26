@@ -2,7 +2,7 @@ import React from 'react'
 
 const Testimonials = () => {
   return (
-    <div className='h-[1000px]'></div>
+    <div className=''></div>
   )
 }
 
