@@ -16,11 +16,12 @@ const Navbar = () => {
   return (
     <nav className='navbar w-full'>
       <div className="container flex justify-between items-center mx-auto text-center">
-      <div className='navbar-logo'>
-        
-      <div className='circle'><span className="firstLetter">A</span><div className="half-circle"></div></div>
-      <span className="otherLetters" draggable="false">bid</span>
+
+      <div className='my-logo'>
+        <div className='circle'><span className="firstLetter">A</span><div className="half-circle"></div></div>
+        <span className="otherLetters" draggable="false">bid</span>
       </div>
+
       <ul className='nav-list'>
       {[
         'home',

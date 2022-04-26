@@ -24,15 +24,15 @@
     @apply bg-[#ffffff10] py-4 shadow-[0_0_10_0px_rgba(0,_0,_0,_0.1)] fixed transition ease-in-out duration-300 backdrop-blur-sm;
   }
 
-  .navbar-logo {
+  .my-logo {
     @apply flex justify-start items-center font-bold text-[20px] font-[Poppins] scale-[1.2];
   }
 
-  /* .navbar-logo.scrolled {
+  /* .my-logo.scrolled {
     @apply scale-[1.3];
   } */
 
-  .navbar-logo .circle {
+  .my-logo .circle {
     @apply flex justify-center w-[30px] h-[30px] rounded-[50%] bg-[#008cff] z-[1] border-[3px] border-[#006fca];
   }
 
@@ -47,11 +47,11 @@
     border-radius: 0 0 150px 150px;
   }
 
-  .navbar-logo .firstLetter {
+  .my-logo .firstLetter {
     @apply text-white rounded-[50%] z-[1];
   }
 
-  .navbar-logo .otherLetters {
+  .my-logo .otherLetters {
     @apply relative right-[6.5px] tracking-[0.6px] z-[2];
   }
 
@@ -241,6 +241,31 @@
 
   .contact-form .form-input {
     @apply mb-[1.5rem]
+  }
+
+  /* Footer Section */
+  .footer-logo {
+    @apply flex justify-start items-center font-bold text-[20px] font-[Poppins] scale-[1.2];
+  }
+
+  /* .my-logo.scrolled {
+    @apply scale-[1.3];
+  } */
+
+  .footer-logo .circle {
+    @apply flex justify-center w-[30px] h-[30px] rounded-[50%] bg-[#008cff] z-[1] border-[3px] border-[#006fca];
+  }
+
+  .footer .container {
+    @apply flex justify-between items-center;
+  }
+
+  .footer .container .row .text a {
+    @apply text-blue-500 font-semibold transition;
+  }
+
+  .footer .container .row .text a:hover {
+    @apply text-blue-400 font-semibold ease-in-out;
   }
 
 }
