@@ -4,6 +4,7 @@ import { About, Footer, Header, Services, Skills, Testimonials, Work } from './c
 import { Navbar } from './components';
 
 import scrollreveal from 'scrollreveal'
+import mixitup from 'mixitup'
 
 
 function App() {
@@ -16,6 +17,11 @@ function App() {
   sr.reveal(".showcase-info", {delay: 600});
   sr.reveal(".showcase-img", {origin: "top", delay: 700});
   sr.reveal(".square", {origin: "left", delay: 900});
+}, []);
+
+useEffect(() => {
+  mixitup(".portfolio-items");
+
 }, []);
 
   return (
@@ -125,5 +131,6 @@ function mlCounter() {
     
   }
 }
+
 
 export default App;

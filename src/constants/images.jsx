@@ -36,9 +36,9 @@ import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
 
-import about01 from '../assets/about01.png';
-import about02 from '../assets/about02.png';
-import about03 from '../assets/about03.png';
+import web_development1 from '../assets/web_development1.jpg';
+import web_design1 from '../assets/web_design1.jpg';
+import web_design2 from '../assets/web_design1.jpg';
 import about04 from '../assets/about04.png';
 
 
@@ -91,9 +91,9 @@ const data = {
   sass,
   typescript,
   vue,
-  about01,
-  about02,
-  about03,
+  web_development1,
+  web_design1,
+  web_design2,
   about04,
   adidas,
   amazon,
