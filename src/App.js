@@ -1,6 +1,6 @@
 import {useEffect} from 'react';
 import './App.css';
-import { About, Footer, Header, Services, Skills, Testimonials, Work } from './container';
+import { About, Footer, Header, Services, Skills, Testimonials, Work, Contact } from './container';
 import { Navbar } from './components';
 
 import scrollreveal from 'scrollreveal'
@@ -20,8 +20,14 @@ function App() {
 }, []);
 
 useEffect(() => {
-  mixitup(".portfolio-items");
-
+  mixitup(".portfolio-items", {
+    selectors: {
+      target: ".prt-card",
+    },
+    animation: {
+      duration: 500
+    }
+  });
 }, []);
 
   return (
@@ -32,6 +38,7 @@ useEffect(() => {
       <Skills />
       <Services />
       <Work />
+      <Contact />
       <Testimonials />
       <Footer />
     </div>

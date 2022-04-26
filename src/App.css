@@ -516,8 +516,14 @@ html {
   font-weight: 600;
   letter-spacing: 0.4px;
   margin-left: 1.3rem;
-  /* font-family: inherit; */
   text-transform: uppercase;
+  /* font-family: inherit; */
+}
+
+.filter-btn.mixitup-control-active {
+  /* border-bottom: 2px solid #6139ff; */
+  color: #8f74ff;
+  /* font-weight: 700; */
 }
 
 .portfolio-items {
@@ -627,4 +633,48 @@ html {
 
 .prt-icon.code {
   --i: 150ms;
+}
+
+/* Contact Section */
+
+.contact .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+}
+
+.contact .heading {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.v-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mail {
+  color: #e0e0e0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: 300ms;
+  margin: 20px 0;
+}
+
+.v-list svg {
+  display: inline-block;
+  font-size: 1rem;
+  margin-left: 7px;
+  transform: translateY(1px);
+  transition: 300ms margin-left;
+}
+
+.v-list:hover a {
+  color: #8a6dff;
+}
+
+.v-list:hover .slide-icon{
+  margin-left: 15px;
+  color: #8a6dff;
 }

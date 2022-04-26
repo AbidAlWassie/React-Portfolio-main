@@ -4,6 +4,10 @@
 
 @layer components {
 
+  input, textarea {
+    @apply outline-none;
+  }
+
   img {
     @apply select-none;
   }
@@ -185,6 +189,28 @@
 
   .service-card:nth-child(3) {
     @apply translate-y-[-2.2rem];
+  }
+
+  /* Contact Section */
+
+  .contact-form {
+    @apply bg-[#231d30] rounded-[20px] p-[3.5rem_3rem] flex flex-col;
+  }
+
+  .contact-form h3 {
+    @apply text-[1.3rem] font-normal mb-[1.6rem];
+  }
+
+  .form-input {
+    @apply inline-block py-[1.5rem] px-[0.9rem] w-full rounded-[17px] bg-[#2B243A];
+  }
+
+  textarea.form-input {
+    @apply min-h-[190px] text-[#ffffffd0];
+  }
+
+  .contact-form .form-input {
+    @apply mb-[1.5rem]
   }
 
 }

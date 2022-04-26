@@ -5,7 +5,7 @@ import { AiFillEye, AiFillGithub } from 'react-icons/ai'
 const Work = () => {
   return (
     <div className="work" id="work">
-        <div className="container mx-auto w-full">
+        <div className="container mx-auto mb-20 w-full">
 
           <div className="portfolio-header">
 
