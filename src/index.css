@@ -91,7 +91,7 @@
     @apply lg:hidden ml-6;
   }
 
-  .toggleBtn {
+  #toggleBtn {
     @apply bg-slate-500 text-white rounded-[50%] flex justify-center items-center w-9 h-9 text-[1.4rem] cursor-pointer shadow-[0_0_10_0px_rgba(0,_0,_0,_0.05)] ml-auto mr-4;
   }
 

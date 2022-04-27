@@ -1,7 +1,7 @@
 import {useEffect} from 'react';
 import './App.css';
 import { About, Footer, Header, Services, Skills, Testimonials, Work, Contact } from './container';
-import { Navbar } from './components';
+import { Navbar } from './components/';
 
 import scrollreveal from 'scrollreveal'
 import mixitup from 'mixitup'
@@ -10,25 +10,26 @@ import mixitup from 'mixitup'
 function App() {
 
   useEffect(() => {
-  const sr = scrollreveal({
-    distance: '60px',
-    duration: 2500,
-  });
-  sr.reveal(".showcase-info", {delay: 200});
-  sr.reveal(".showcase-img", {origin: "top", delay: 400});
-  sr.reveal(".square", {origin: "left", delay: 600});
+    const sr = scrollreveal({
+      distance: '60px',
+      duration: 2500,
+    });
+    
+    sr.reveal(".showcase-info", {delay: 200});
+    sr.reveal(".showcase-img", {origin: "top", delay: 400});
+    sr.reveal(".square", {origin: "left", delay: 600});
 }, []);
 
-useEffect(() => {
-  mixitup(".portfolio-items", {
-    selectors: {
-      target: ".prt-card",
-    },
-    animation: {
-      duration: 500
-    }
-  });
-}, []);
+  useEffect(() => {
+    mixitup(".portfolio-items", {
+      selectors: {
+        target: ".prt-card",
+      },
+      animation: {
+        duration: 500
+      }
+    });
+  }, []);
 
   return (
     <div className="App">

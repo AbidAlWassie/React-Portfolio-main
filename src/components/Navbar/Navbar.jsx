@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { HiOutlineMenu, HiX } from 'react-icons/hi'
 import { MdOutlineDarkMode } from 'react-icons/md'
 
@@ -12,6 +12,15 @@ const Navbar = () => {
   const toggleNav = () => {
     toggle ? setToggle(false) : setToggle(true);
   }
+  
+
+  const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    document.body.classList.toggle('light', isOpen);
+    localStorage.setItem("light", isOpen);
+  },[isOpen]);
+
+
 
   return (
     <nav className='navbar w-full' id='navbar'>
@@ -37,9 +46,9 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className='toggleBtn'>
+      <button className='toggleBtn' id='toggleBtn' onClick={()=> setIsOpen(!isOpen && "light")}>
         <MdOutlineDarkMode/>
-      </div>
+      </button>
 
       <div className='menuBtn'>
         <HiOutlineMenu onClick={toggleNav} />
