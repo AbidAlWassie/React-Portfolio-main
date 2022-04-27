@@ -3,7 +3,7 @@ import { images } from '../../constants'
 
 const Skills = () => {
   return (
-    <div className="skills" id="skills">
+    <div className="skills section" id="skills">
       <div className="container flex justify-between items-center mx-auto">
         <div className="skills-box">
           <div className="box-heading">

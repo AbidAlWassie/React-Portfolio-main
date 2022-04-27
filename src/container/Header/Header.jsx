@@ -5,7 +5,7 @@ import { images } from '../../constants'
 
 const Header = () => {
   return (
-    <header className="header" id="home">
+    <header className="header section" id="home">
       <img src={images.square1} className="shape square" alt="" />
       <div className="container flex justify-between items-center mx-auto">
       <div className="showcase-info">

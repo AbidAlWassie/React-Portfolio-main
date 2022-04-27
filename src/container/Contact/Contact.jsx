@@ -6,7 +6,7 @@ import { BsGithub, BsYoutube, BsFacebook } from 'react-icons/bs'
 
 const Contact = () => {
   return (
-    <div className="contact" id="contact">
+    <div className="contact section" id="contact">
         <div className="container mx-auto my-40 w-full">
           <div className="contact-info">
             <div className="sub-heading">Contact</div>

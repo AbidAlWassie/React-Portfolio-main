@@ -58,11 +58,15 @@ let skillsPlayed = false;
 let mlPlayed = false;
 
 window.addEventListener("scroll", () => {
+  
+  activeLink();
+
   stickyNav();
 
   if (!skillsPlayed) loadSkills();
 
   if (!mlPlayed) mlCounter();
+
 });
 
 function updateCount(num, maxNum) {
@@ -138,6 +142,38 @@ function mlCounter() {
     
   }
 }
+
+// Active Nav Links
+
+    
+
+function activeLink() {
+  var navbar = document.getElementById("navbar");
+  // console.log();
+  let sections = document.querySelectorAll(".section");
+  let passedSections = Array.from(sections).map((sect, i) => {
+    return { 
+      y: sect.getBoundingClientRect().top - navbar.offsetHeight,
+      id: i
+    };
+  }).filter(sect => sect.y <= 0);
+
+    // console.log(passedSections);
+
+  let currentSectID = passedSections.at(-1).id;
+  // console.log(currentSectID);
+  
+  let navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach(l => l.classList.remove("active"));
+  navLinks[currentSectID].classList.add("active");
+
+  // for (let i = 0; i < navLinks.length; i++) {
+      
+  //     console.log();
+  //   }
+
+  }
 
 
 export default App;

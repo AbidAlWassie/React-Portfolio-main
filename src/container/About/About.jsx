@@ -6,7 +6,7 @@ import SvgTesting from '../../assets/vectors/Testing'
 import SvgResearch from '../../assets/vectors/Research'
 const About = () => {
   return (
-    <div className="about" id="about">
+    <div className="about section" id="about">
       <div className="container flex justify-between items-center mx-auto">
       <div className="about-flex flex-[1]">
 
