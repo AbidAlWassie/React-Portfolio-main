@@ -1,18 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --hue-1: 257;
-  --hue-2: 47;
-  --bg-color: hsl(var(--hue-1), 100%, 97%);
-  --main-color-1: hsl(var(--hue-1), 100%, 60%);
-  --main-color-dark-1: hsl(var(--hue-1), 69%, 50%);
-  --main-color-2: hsl(var(--hue-2), 82%, 55%);
-  --bg-color-1: hsl(var(--hue-1), 100%, 97%);
+  --bg-color: #161B29;
+  --main-color-1: #702FFF;
+  --main-color-dark-1: #633DDB;
+  --main-color-2: #FFD43E;
+  --main-color-dark-2: #EEC434;
+  --bg-color-1: #272034;
+  --bg-color-2: #2F2840;
+  --bg-color-3: #2F2840;
+  --bg-color-transparent: rgba(44, 44, 44, 0.2);
+  --heading-color: #ffffff;
+  --text-color: #c5c5c5;
+  --text-color2:#e4e4e7;
+  --text-white: #fff;
+  --content-inside: #2B243A;
+  --path: #372d4e;
+  --path2: #d6dffa;
+  /* --footer: #B7AFC5;
+  --footer-hover: #c2bccc; */
+}
+
+/* Dark Mode */
+body {
+  --bg-color: #161B29;
+  --main-color-1: #702FFF;
+  --main-color-dark-1: #633DDB;
+  --main-color-2: #FFD43E;
+  --main-color-dark-2: #EEC434;
+  --bg-color-1: #272034;
+  --bg-color-2: #231D30;
+  --bg-color-3: #2F2840;
+  --bg-color-transparent: rgba(44, 44, 44, 0.2);
+  --heading-color: #ffffff;
+  --text-color: #c5c5c5;
+  --text-color2:#e4e4e7;
+  --text-white: #fff;
+  --content-inside: #2B243A;
+  --content-focus: #221246;
+}
+
+body.light {
+  --bg-color: #F3ECFF;
+  --main-color-1: #702FFF;
+  --main-color-dark-1: #633DDB;
+  --main-color-2: #FFD43E;
+  --main-color-dark-2: #EEC434;
+  --bg-color-1: #FFFFFF;
   --bg-color-2: #fff;
-  --bg-color-3: hsl(var(--hue-1), 100%, 98%);
-  --bg-color-transparent: rgb(255, 255, 255, 0.6);
-  --heading-color: hsl(var(--hue-1), 61%, 24%);
-  --text-color: hsl(var(--hue-1), 17%, 63%);
+  --bg-color-3: #C7C3CB;
+  --bg-color-transparent: rgb(255, 255, 255, 0.1);
+  --heading-color: #35226C;
+  --text-color: #403B50;
+  --text-color2:#414141;
+  --text-white: #303030;
+  --content-inside: #F8F1FF;
+  --path: #d2c3f5;
+  --path2: #383c4b;
+  color: var(--text-white);
+}
+
+.nav-link {
+  color: var(--text-color2);
+}
+
+.nav-link:hover {
+  color: var(--text-white);
+}
+
+
+body {
+  background: var(--bg-color);
 }
 
 *,
@@ -24,18 +82,16 @@
 }
 
 html {
-  color-scheme: light !important;
-  background: rgb(22, 27, 41);
-  color: #fff;
+  color-scheme: dark;
+  scrollbar-color: #686868 #424242;
     /* color-scheme: dark; */
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  scrollbar-color: #686868 #424242;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 ::selection {
-  background: hsla(var(--hue-1), 100%, 60%, 0.9);
+  background: var(--main-color-1);
   color: #fff;
 }
 
@@ -57,7 +113,9 @@ html {
   background: #2e30a1;
 }
 
-
+.navbar.scrolled {
+  background-color: var(--bg-color-transparent);
+}
 
 .nav-menu.slideBack > .sideMenu {
   transform: translateX(0%) !important;
@@ -68,6 +126,11 @@ html {
   transform: translateX(100%) !important;
   transition: 150ms ease-in-out;
 }
+
+.my-logo .otherLetters {
+  color: var(--text-white);
+}
+
 
 
 .block {
@@ -83,7 +146,7 @@ html {
 }
 
 .sub-heading {
-  /* color: var(--heading-color); */
+  color: var(--heading-color);
   text-transform: uppercase;
   font-size: 0.85rem;
   letter-spacing: 0.5px;
@@ -94,7 +157,7 @@ html {
 }
 
 .heading {
-  /* color: var(--heading-color); */
+  color: var(--heading-color);
   font-size: 3rem;
   font-family: "Abril Fatface";
   font-weight: 400;
@@ -105,7 +168,7 @@ html {
   font-size: 1.2rem;
   margin: .2rem 0;
   line-height: 2.3;
-  color: #c5c5c5;
+  color: var(--text-color);
 }
 
 /* Header Styles */
@@ -161,7 +224,7 @@ html {
 
 .btn.secondary-btn {
   background-color: transparent;
-  /* color: #fff; */
+  color: var(--text-white);
   font-weight: 500;
   font-size: 0.9rem;
   border-bottom: 2.5px solid var(--main-color-2);
@@ -276,7 +339,8 @@ html {
 }
 
 .about-card {
-  background: #292236;
+  /* background: #292236; */
+  background: var(--bg-color-1);
   width: 100%;
   height: 100%;
   display: flex;
@@ -297,7 +361,7 @@ html {
 }
 
 .about-card h3 {
-  color: white;
+  color: var(--text-white);
   font-weight: 600;
   font-size: 1rem;
   margin-top: 1rem;
@@ -330,15 +394,15 @@ html {
 }
 
 .st0 {
-  fill: #372d4e;
+  fill: var(--path);
 }
 
 .st1 {
-  fill: #372d4e;
+  fill: var(--path);
 }
 
 .st2 {
-  fill: #d6dffa;
+  fill: var(--path2);
 }
 
 /* Skills Styles */
@@ -348,7 +412,7 @@ html {
 }
 
 .skills-box {
-  background: #272034;
+  background: var(--bg-color-1);
   padding: 5rem 6rem;
   border-radius: 20px;
   width: 100%;
@@ -484,6 +548,14 @@ html {
   padding: 7rem 0;
 }
 
+.service-card {
+  background-color: var(--bg-color-1);
+}
+
+.service-card h3 {
+  color: var(--text-white);
+}
+
 /* Work Section */
 
 .portfolio-header {
@@ -507,7 +579,7 @@ html {
 
 .filter-btn {
   display: inline-block;
-  color: white;
+  color: var(--text-white);
   background: none;
   outline: none;
   border: none;
@@ -555,6 +627,7 @@ html {
 }
 
 .prt-desc {
+  background: var(--bg-color-1);
   padding: 1.1rem 1.6rem;
   display: flex;
   justify-content: space-between;
@@ -648,6 +721,37 @@ html {
   margin-bottom: 2rem;
 }
 
+.social-icons-lg a {
+  color: var(--text-color);
+  background: var(--bg-color-2);
+  /* @apply min-w-[2rem] min-h-[2rem] text-[#ffffff93] p-2 bg-[#35353559] rounded-[50%]; */
+}
+
+.social-icons-lg a svg {
+  color: var(--text-color2);
+  /* @apply min-w-[2rem] min-h-[2rem] text-[#ffffff93] duration-300; */
+}
+
+.social-icons-lg a:hover {
+  background: var(--bg-color-3);
+  /* @apply min-w-[2rem] min-h-[2rem] text-[#ffffffd0]; */
+  cursor: pointer;
+}
+
+
+
+.contact-form {
+  background: var(--bg-color-2);
+}
+
+.contact-form h3 {
+  color: var(--text-white);
+}
+
+.form-input {
+  background: var(--content-inside);
+}
+
 .v-list {
   display: flex;
   justify-content: flex-start;
@@ -656,7 +760,7 @@ html {
 }
 
 .mail {
-  color: #e0e0e0;
+  color: var(--text-color2);
   font-weight: 600;
   font-size: 1.1rem;
   transition: 300ms;
