@@ -155,21 +155,7 @@ html {
 
 
 
-.showcase-img {
-  position: relative;
-  min-height: calc(100% + 120px);
-  background: linear-gradient(124deg,
-  var(--main-color-1) 50%,
-  var(--main-color-2) 50%
-  );
-  margin-top: -220px;
-  /* border-radius: 0 0 80px 80px; */
-  z-index: -1;
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  /* width: 45%; */
-}
+
 
 .showcase-img .person {
   width: 80%;
