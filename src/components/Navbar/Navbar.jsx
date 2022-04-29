@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { HiOutlineMenu, HiX } from 'react-icons/hi'
+import { HiOutlineMenu } from 'react-icons/hi'
 import { MdOutlineDarkMode } from 'react-icons/md'
 
 // import { images } from '../../constants'
@@ -12,13 +12,18 @@ const Navbar = () => {
   const toggleNav = () => {
     toggle ? setToggle(false) : setToggle(true);
   }
+
   
+  // useEffect(() => {
+  //   localStorage.setItem("theme", "dark");
+  // }, []);
 
   const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     document.body.classList.toggle('light', isOpen);
     localStorage.setItem("light", isOpen);
-  },[isOpen]);
+  }, [isOpen]);
 
 
 
@@ -41,12 +46,12 @@ const Navbar = () => {
         'contact'
       ].map((item) => (
           <li className='nav-link' key={`link-${item}`}>
-            <a href={`#${item}`}> {item} </a>
+            <a href={`#${item}`} draggable="false"> {item}</a>
           </li>
         ))}
       </ul>
 
-      <button className='toggleBtn' id='toggleBtn' onClick={()=> setIsOpen(!isOpen && "light")}>
+      <button className='toggleBtn' id='toggleBtn' onClick={()=> setIsOpen(!isOpen) }>
         <MdOutlineDarkMode/>
       </button>
 
@@ -54,7 +59,7 @@ const Navbar = () => {
         <HiOutlineMenu onClick={toggleNav} />
       </div>
 
-      <div className={toggle ? "nav-menu slideIn" : "nav-menu slideBack"}>
+      {/* <div className={toggle ? "nav-menu slideIn" : "nav-menu slideBack"}>
 
           
           <ul className='sideMenu'>
@@ -70,7 +75,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-      </div>
+      </div> */}
 
     </div>
     </nav>

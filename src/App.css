@@ -158,9 +158,10 @@ html {
 
 .heading {
   color: var(--heading-color);
-  font-size: 3rem;
+  /* font-size: 3rem; */
   font-family: "Abril Fatface";
-  font-weight: 400;
+  /* font-family: "Open Sans"; */
+  /* font-weight: 500; */
   line-height: 1.3;
 }
 
@@ -189,7 +190,7 @@ html {
 }
 
 .header .heading {
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; */
 }
 
 .header .text {
@@ -256,7 +257,7 @@ html {
   var(--main-color-2) 50%
   );
   margin-top: -220px;
-  border-radius: 0 0 80px 80px;
+  /* border-radius: 0 0 80px 80px; */
   z-index: -1;
   display: flex;
   justify-content: center;
@@ -307,7 +308,7 @@ html {
 
 .about {
   position: relative;
-  padding: 7rem 0;
+  /* padding: 7rem 0; */
 }
 
 .about .text {
@@ -413,7 +414,7 @@ html {
 
 .skills-box {
   background: var(--bg-color-1);
-  padding: 5rem 6rem;
+  /* padding: 5rem 6rem; */
   border-radius: 20px;
   width: 100%;
 }
@@ -423,9 +424,7 @@ html {
 }
 
 .skills-wrap {
-  display: grid;
-  grid-template-columns: repeat(5, 150px);
-  justify-content: space-between;
+
 }
 
 
@@ -543,10 +542,7 @@ html {
 }
 
 /* Services Styles */
-.services {
-  position: relative;
-  padding: 7rem 0;
-}
+
 
 .service-card {
   background-color: var(--bg-color-1);
@@ -558,12 +554,12 @@ html {
 
 /* Work Section */
 
-.portfolio-header {
+/* .portfolio-header {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 2rem;
-}
+} */
 
 .portfolio-title {
   /* display: flex;
@@ -712,7 +708,7 @@ html {
 
 .contact .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
   column-gap: 4rem;
 }
 
@@ -783,3 +779,9 @@ html {
   margin-left: 15px;
   color: #8a6dff;
 }
+
+/* Responsive Styles */
+
+/* @media (max-width: 1024px) {
+  
+} */
