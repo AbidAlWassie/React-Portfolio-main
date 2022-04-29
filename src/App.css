@@ -189,9 +189,9 @@ html {
   margin-bottom: 0.7rem;
 }
 
-.header .heading {
-  /* font-size: 3.5rem; */
-}
+/* .header .heading {
+  font-size: 3.5rem;
+} */
 
 .header .text {
   margin: 0.8rem 0;
@@ -423,9 +423,9 @@ html {
   display: flex;
 }
 
-.skills-wrap {
+/* .skills-wrap {
 
-}
+} */
 
 
 .skill {
