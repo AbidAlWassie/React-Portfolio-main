@@ -4,7 +4,7 @@ import { images } from '../../constants'
 const Services = () => {
   return (
     <div className="services section" id="services">
-      <div className="container flex justify-between items-center mx-auto">
+      <div className="container flex justify-between mx-auto">
         <div className="services-info">
           <h1 className="sub-heading">My Services</h1>
           <h3 className="heading">Things I can do for my clients</h3>

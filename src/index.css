@@ -201,9 +201,6 @@
 
   /* Contact Section */
 
-  .social-container-lg {
-    @apply my-12;
-  }
 
   .social-icons-lg {
     @apply flex justify-start items-center gap-6 my-4;
@@ -334,7 +331,6 @@
   
   @media (max-width: 1024px) {
 
-
     .header {
       @apply py-12
     }
@@ -352,7 +348,7 @@
       @apply text-[2rem] lg:text-[3rem];
     }
 
-    .header .dots {
+    .header .dots, .header .square, .header .circle {
       @apply hidden;
     }
 
@@ -410,6 +406,18 @@
       @apply py-10 px-12;
     }
 
+    .footer .container {
+      @apply flex flex-col justify-start items-start;
+    }
+
+  }
+
+  
+
+  @media (max-width: 768px) {
+    .services-grid {
+      @apply grid-cols-[1fr];
+    }
   }
 
   @media (max-width: 610px) {
@@ -421,6 +429,14 @@
     }
   }
 
+  @media (max-width: 470px) {
+    .skills-wrap {
+      @apply justify-center grid-cols-[repeat(1_,150px)];
+    }
 
+    .about-flex {
+      @apply scale-75
+    }
+  }
 
 }
