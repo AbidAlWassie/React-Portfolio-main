@@ -62,7 +62,7 @@
   }
 
   .nav-list {
-    @apply hidden lg:flex mr-auto ml-12;
+    @apply lg:flex mr-auto ml-12;
   }
 
   .nav-link {
@@ -474,6 +474,82 @@
   }
   
   @media (max-width: 1024px) {
+
+    .hamburger {
+      @apply py-4 px-0 h-3 w-6 box-content cursor-pointer relative;
+    }
+
+    .hamburger .bar {
+      @apply w-full h-[3px] rounded-[3px] absolute bg-white;
+    }
+
+    .hamburger .bar:nth-child(1) {
+      @apply top-3 transition-all duration-200;
+    }
+
+    .hamburger .bar:nth-child(2) {
+      @apply top-5 transition-all duration-200;
+    }
+
+    .hamburger .bar:nth-child(3) {
+      @apply top-7 transition-all duration-200;
+    }
+
+    .navbar.open .hamburger .bar:nth-child(1) {
+      @apply top-[50%] translate-y-[-50%] rotate-[-45deg] transition duration-200;
+    }
+
+    .navbar.open .hamburger .bar:nth-child(2) {
+      @apply top-[50%] hidden transition duration-200;
+    }
+
+    .navbar.open .hamburger .bar:nth-child(3) {
+      @apply bottom-[50%] translate-y-[-250%] rotate-[45deg] transition duration-200;
+    }
+
+    
+
+    .navbar .container {
+      @apply relative;
+    }
+
+    .navbar.open .nav-list {
+      @apply block;
+    }
+
+    .navbar.open {
+      @apply h-[412px] block;
+    }
+
+    .navbar .nav-list {
+      @apply h-[0] hidden;
+    }
+
+    .nav-list {
+      @apply flex-col absolute w-[100vw] justify-center right-[-1.5rem] items-center z-[-2] transition-all;
+    }
+
+    .nav-link::after {
+      @apply content-[""] absolute w-full h-[10px] rounded-[5px] bg-[#9563ff] bottom-[2px] left-[-3px] z-[-1];
+    }
+
+    /* .nav-link::after {
+      @apply content-[""] absolute w-full h-[10px] rounded-[5px] bg-[#9563ff] bottom-[2px] left-[-3px] z-[-1];
+    } */
+
+    /* .nav-list::after {
+      @apply content-[""] absolute w-full h-[1px] bg-white opacity-70;
+    } */
+
+    /* .nav-list {
+      @apply p-[0.5rem_0_2rem] flex-col;
+    } */
+
+
+    .nav-link {
+      @apply my-6 text-white font-[500] w-fit mx-auto
+    }
+
 
     .header {
       @apply py-12

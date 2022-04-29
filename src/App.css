@@ -127,6 +127,8 @@ html {
   transition: 150ms ease-in-out;
 }
 
+
+
 .my-logo .otherLetters {
   color: var(--text-white);
 }
@@ -156,15 +158,6 @@ html {
 
 
 
-
-.showcase-img .person {
-  width: 80%;
-  /* width: 100%; */
-  /* position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%); */
-}
 
 .dots {
   width: 112px;
@@ -655,6 +648,20 @@ html {
 
 /* Responsive Styles */
 
-/* @media (max-width: 1024px) {
-  
-} */
+@media (max-width: 1024px) {
+  .nav-holder {
+    /* background: var(--bg-color-1); */
+  }
+
+  .nav-list {
+    z-index: 10;
+  }
+
+  .navbar.open {
+    background: var(--bg-color-1);
+  }
+
+  .hamburger .bar {
+    background: var(--heading-color);
+  }
+}
