@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --bg-color: #161B29;
+  --bg-color: #161e29;
   --main-color-1: #702FFF;
   --main-color-dark-1: #633DDB;
   --main-color-2: #FFD43E;
@@ -23,21 +23,21 @@
 
 /* Dark Mode */
 body {
-  --bg-color: #161B29;
+  --bg-color: #161629;
   --main-color-1: #702FFF;
   --main-color-dark-1: #633DDB;
-  --main-color-2: #FFD43E;
-  --main-color-dark-2: #EEC434;
-  --bg-color-1: #272034;
-  --bg-color-2: #231D30;
-  --bg-color-3: #2F2840;
+  --main-color-2: #008CFF;
+  --main-color-dark-2: #34a3ee;
+  --bg-color-1: #262d3d;
+  --bg-color-2: #1D2530;
+  --bg-color-3: #2D3F4E;
   --bg-color-transparent: rgba(44, 44, 44, 0.2);
   --heading-color: #ffffff;
   --text-color: #c5c5c5;
   --text-color2:#e4e4e7;
   --text-white: #fff;
-  --content-inside: #2B243A;
-  --content-focus: #221246;
+  --content-inside: #242d3a;
+  --content-focus: #122346;
 }
 
 body.light {
@@ -116,17 +116,6 @@ html {
 .navbar.scrolled {
   background-color: var(--bg-color-transparent);
 }
-
-.nav-menu.slideBack > .sideMenu {
-  transform: translateX(0%) !important;
-  transition: 150ms ease-in-out;
-}
-
-.nav-menu.slideIn > .sideMenu {
-  transform: translateX(100%) !important;
-  transition: 150ms ease-in-out;
-}
-
 
 
 .my-logo .otherLetters {
