@@ -6,6 +6,8 @@
   --main-color-dark-1: #633DDB;
   --main-color-2: #FFD43E;
   --main-color-dark-2: #EEC434;
+  --main-color-3: #2f82ff;
+  --main-color-dark-3: #3173c9;
   --bg-color-1: #272034;
   --bg-color-2: #2F2840;
   --bg-color-3: #2F2840;
@@ -39,7 +41,7 @@ body {
   --text-color2:#e4e4e7;
   --text-white: #fff;
   --content-inside: #242d3a;
-  --content-focus: #122346;
+  --content-focus: #273241;
   --path: #263f58;
   --path2: #d6dffa;
 }
@@ -50,6 +52,8 @@ body.light {
   --main-color-dark-1: #633DDB;
   --main-color-2: #FFD43E;
   --main-color-dark-2: #EEC434;
+  --main-color-3: #702FFF;
+  --main-color-dark-3: #633DDB;
   --bg-color-1: #FFFFFF;
   --bg-color-2: #fff;
   --bg-color-3: #C7C3CB;
@@ -59,6 +63,7 @@ body.light {
   --text-color2:#414141;
   --text-white: #303030;
   --content-inside: #F8F1FF;
+  --content-focus: #f1e6ff;
   --path: #d2c3f5;
   --path2: #383c4b;
   color: var(--text-white);
@@ -430,6 +435,10 @@ html {
   color: var(--text-white);
 }
 
+.milestones h2 {
+  color: var(--main-color-3);
+}
+
 /* Work Section */
 
 /* .portfolio-header {
@@ -450,7 +459,11 @@ html {
 /* .filter-btns {
 
 } */
-
+.filter-btn.mixitup-control-active {
+  /* border-bottom: 2px solid #6139ff; */
+  color: var(--main-color-3);
+  /* font-weight: 700; */
+}
 
 
 .portfolio-items {
@@ -624,6 +637,19 @@ html {
 
 .form-input {
   background: var(--content-inside);
+}
+
+.form-input:hover {
+  background: var(--content-focus);
+}
+
+.form-input:focus {
+  background: var(--content-focus);
+  border-color: var(--main-color-dark-3);
+}
+
+textarea.form-input {
+  color: var(--text-color);
 }
 
 .v-list {

@@ -167,7 +167,7 @@
   }
 
   .milestones h2 {
-    @apply text-[#6D33FF] text-[1.3rem] font-bold;
+    @apply text-[1.3rem] font-bold;
   }
 
   .milestones h2 span {
@@ -239,15 +239,15 @@
   }
 
   .form-input:hover {
-    @apply brightness-[1.1];
+    /* @apply brightness-[1.1]; */
   }
 
   .form-input:focus {
-    @apply brightness-[1.2] border-[#9554ff96];
+    /* @apply brightness-[1.2] border-[#9554ff96]; */
   }
 
   textarea.form-input {
-    @apply min-h-[190px] text-[#ffffffd0];
+    @apply min-h-[190px];
   }
 
   .contact-form .form-input {
@@ -440,11 +440,7 @@
     /* font-family: inherit; */
   }
   
-  .filter-btn.mixitup-control-active {
-    /* border-bottom: 2px solid #6139ff; */
-    color: #8f74ff;
-    /* font-weight: 700; */
-  }
+  
 
   .showcase-img {
     position: relative;
