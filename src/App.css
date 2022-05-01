@@ -27,7 +27,9 @@ body {
   --main-color-1: #702FFF;
   --main-color-dark-1: #633DDB;
   --main-color-2: #008CFF;
-  --main-color-dark-2: #34a3ee;
+  --main-color-dark-2: #1590e2;
+  --main-color-3: #2f82ff;
+  --main-color-dark-3: #3173c9;
   --bg-color-1: #262d3d;
   --bg-color-2: #1D2530;
   --bg-color-3: #2D3F4E;
@@ -38,6 +40,8 @@ body {
   --text-white: #fff;
   --content-inside: #242d3a;
   --content-focus: #122346;
+  --path: #263f58;
+  --path2: #d6dffa;
 }
 
 body.light {
@@ -208,7 +212,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 15px solid #5A30FF;
+  border: 15px solid var(--main-color-3);
   z-index: -1;
   opacity: 0.2;
 }
@@ -231,7 +235,7 @@ html {
 }
 
 .about-card:hover .st2 {
-  fill: #5A30FF;
+  fill: var(--main-color-dark-3);
   transition: 300ms;
 }
 
@@ -488,6 +492,25 @@ html {
   font-size: 0.95rem;
   font-weight: 600;
   text-transform: capitalize;
+}
+
+.btn {
+  background: var(--main-color-3);
+}
+
+.btn:hover {
+  background-color: var(--main-color-dark-3);
+}
+
+.btn.secondary-btn {
+  background-color: transparent;
+  color: var(--text-white);
+  border-bottom: 2.5px solid var(--main-color-1);
+
+}
+
+.btn.secondary-btn::before {
+  background-color: var(--main-color-2);
 }
 
 .btn.secondary-btn.sm {

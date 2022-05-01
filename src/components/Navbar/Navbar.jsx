@@ -8,10 +8,6 @@ import { MdOutlineDarkMode } from 'react-icons/md'
 const Navbar = () => {
 
 
-  
-  // useEffect(() => {
-  //   localStorage.setItem("theme", "dark");
-  // }, []);
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,7 +15,6 @@ const Navbar = () => {
 
   useEffect(() => {
     document.body.classList.toggle('light', isOpen);
-    // localStorage.setItem("light", isOpen);
   }, [isOpen]);
 
   useEffect(() => {

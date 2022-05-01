@@ -83,9 +83,6 @@ function updateCount(num, maxNum) {
 }
 
 
-
-
-
 function loadSkills() {
   const skCounters = document.querySelectorAll(".counter span");
   const progressBars = document.querySelectorAll(".sk-progress svg circle");

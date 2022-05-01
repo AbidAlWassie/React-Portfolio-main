@@ -393,7 +393,6 @@
     display: inline-block;
     padding: 0.9rem 1.75rem;
     border-radius: 17px;
-    background: var(--main-color-1);
     color: #fff;
     font-size: 0.85rem;
     letter-spacing: 0.4px;
@@ -401,29 +400,24 @@
     transition: 300ms;
   }
   
-  .btn:hover {
-    background-color: var(--main-color-dark-1);
-  }
+
   
   .btn.secondary-btn {
-    background-color: transparent;
-    color: var(--text-white);
     font-weight: 500;
     font-size: 0.9rem;
-    border-bottom: 2.5px solid var(--main-color-2);
     border-radius: 0;
     padding: 0.15rem 0;
     position: relative;
   }
   
   .btn.secondary-btn::before {
+    background-color: var(--main-color-1);
     content: "";
     position: absolute;
     width: 0%;
     height: 2.5px;
     bottom: -2.5px;
     left: 0;
-    background-color: var(--main-color-1);
     transition: 300ms ease-in-out;
   }
   
