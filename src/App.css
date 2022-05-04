@@ -100,7 +100,7 @@ html {
 }
 
 ::selection {
-  background: var(--main-color-1);
+  background: var(--main-color-3);
   color: #fff;
 }
 
@@ -120,6 +120,15 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #2e30a1;
+}
+
+.navbar {
+  -moz-transition: height 0.5s ease !important;
+  -ms-transition: height 0.5s ease !important;
+  -o-transition: height 0.5s ease !important;
+  -webkit-transition: height 0.5s ease !important;
+  transition: height 0.5s ease !important;
+  height: initial;
 }
 
 .navbar.scrolled {
@@ -554,7 +563,7 @@ html {
 
 .prt-image:hover .prt-overlay {
   pointer-events: auto;
-  background: #1408444b;
+  background: #11214d73;
   backdrop-filter: blur(5px);
 }
 
@@ -563,7 +572,7 @@ html {
   color: white;
   font-size: 1.1rem;
   margin: 0 0.4rem;
-  background-color: var(--main-color-1);
+  background-color: var(--main-color-3);
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -578,7 +587,7 @@ html {
 
 
 .prt-icon:hover {
-  background: var(--main-color-dark-1);
+  background: var(--main-color-dark-3);
 }
 
 .prt-image:hover .prt-icon {
