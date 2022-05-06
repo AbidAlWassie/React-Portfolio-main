@@ -18,6 +18,14 @@ function App() {
     sr.reveal(".showcase-info", {delay: 200});
     sr.reveal(".showcase-img", {origin: "top", delay: 400});
     sr.reveal(".square", {origin: "left", delay: 600});
+    sr.reveal(".about-flex", {origin: "bottom", delay: 400});
+    sr.reveal(".about-info", {origin: "bottom", delay: 1200});
+    sr.reveal(".skills-box", {origin: "bottom", delay: 100});
+    sr.reveal(".services-info", {origin: "bottom", delay: 500});
+    sr.reveal(".services-grid", {origin: "bottom", delay: 1000});
+    sr.reveal(".work .container", {origin: "bottom", delay: 500});
+    sr.reveal(".contact-info", {origin: "bottom", delay: 200});
+    sr.reveal(".contact-form", {origin: "bottom", delay: 800});
 }, []);
 
   useEffect(() => {

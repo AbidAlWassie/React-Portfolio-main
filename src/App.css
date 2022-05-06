@@ -123,12 +123,7 @@ html {
 }
 
 .navbar {
-  -moz-transition: height 0.5s ease !important;
-  -ms-transition: height 0.5s ease !important;
-  -o-transition: height 0.5s ease !important;
-  -webkit-transition: height 0.5s ease !important;
-  transition: height 0.5s ease !important;
-  height: initial;
+  transition: padding 150ms ease-in-out;
 }
 
 .navbar.scrolled {
@@ -705,6 +700,8 @@ textarea.form-input {
   }
 
   .navbar.open {
+    display: block;
+    height: 412px;
     background: var(--bg-color-1);
   }
 

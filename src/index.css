@@ -4,10 +4,6 @@
 
 @layer components {
 
-  /* .loader {
-    @apply ;
-  } */
-
   input, textarea {
     @apply outline-none;
   }
@@ -19,28 +15,22 @@
   .about-card,.btn,.sub-heading {
     @apply select-none;
   }
-  
-  /* .navbar {
-    @apply w-full flex justify-between items-center z-[2] select-none py-7 px-6 bg-transparent transition-all ease-in-out duration-200;
-  }
 
-  .section {
-    @apply px-6 w-full;
-  } */
+  .navbar {
+    @apply w-full flex justify-between items-center z-[2] select-none py-7 px-6 bg-transparent;
+  }
 
 
   /* bg-[#ffffff10] */
   .navbar.scrolled {
-    @apply py-4 shadow-[0_0_10_0px_rgba(0,_0,_0,_0.1)] fixed transition ease-in-out duration-300 backdrop-blur-sm;
+    @apply py-4 shadow-[0_0_10_0px_rgba(0,_0,_0,_0.1)] fixed backdrop-blur-sm;
   }
+
 
   .my-logo {
     @apply flex justify-start items-center font-bold text-[20px] font-[Poppins] scale-[1.2];
   }
 
-  /* .my-logo.scrolled {
-    @apply scale-[1.3];
-  } */
 
   .my-logo .circle {
     @apply flex justify-center w-[30px] h-[30px] rounded-[50%] bg-[#008cff] z-[1] border-[3px] border-[#006fca];
@@ -238,13 +228,6 @@
     @apply inline-block py-[1.5rem] px-[0.9rem] w-full rounded-[17px] border-[2px] border-transparent transition-all;
   }
 
-  .form-input:hover {
-    /* @apply brightness-[1.1]; */
-  }
-
-  .form-input:focus {
-    /* @apply brightness-[1.2] border-[#9554ff96]; */
-  }
 
   textarea.form-input {
     @apply min-h-[190px];
@@ -312,10 +295,6 @@
 
   .skills-box {
     @apply py-20 px-24;
-  }
-
-  .navbar {
-    @apply w-full flex justify-between items-center z-[2] select-none py-7 px-6 bg-transparent;
   }
 
   .section {
@@ -511,10 +490,6 @@
       @apply block;
     }
 
-
-    .navbar.open {
-      @apply h-[412px] block;
-    }
 
     .navbar .nav-list {
       @apply h-[0] hidden;
