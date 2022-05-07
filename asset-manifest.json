@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/React-Portfolio-main/static/css/main.a51fb00a.css",
-    "main.js": "/React-Portfolio-main/static/js/main.b0ba8290.js",
+    "main.js": "/React-Portfolio-main/static/js/main.5da6849b.js",
     "static/js/787.2860e1ea.chunk.js": "/React-Portfolio-main/static/js/787.2860e1ea.chunk.js",
     "static/media/web_design1.jpg": "/React-Portfolio-main/static/media/web_design1.092fadce68a870932bbe.jpg",
-    "static/media/profile1.png": "/React-Portfolio-main/static/media/profile1.ad3449fc0d5bbf1b08fb.png",
+    "static/media/profile_lg.png": "/React-Portfolio-main/static/media/profile_lg.ad3449fc0d5bbf1b08fb.png",
+    "static/media/profile_md.png": "/React-Portfolio-main/static/media/profile_md.4d0c24a42c32be2a12e2.png",
+    "static/media/profile_sm.png": "/React-Portfolio-main/static/media/profile_sm.b4a6befbfe6f6cd44dcf.png",
     "static/media/web_development1.jpg": "/React-Portfolio-main/static/media/web_development1.74cef10ae951018294e7.jpg",
     "static/media/MySQL2.png": "/React-Portfolio-main/static/media/MySQL2.1703cb1c835c351750ba.png",
     "static/media/laravel.png": "/React-Portfolio-main/static/media/laravel.c58124813fef49d3fa26.png",
@@ -23,11 +25,11 @@
     "static/media/design.svg": "/React-Portfolio-main/static/media/design.135b132d2b19ae08263d4e2bc8589af1.svg",
     "index.html": "/React-Portfolio-main/index.html",
     "main.a51fb00a.css.map": "/React-Portfolio-main/static/css/main.a51fb00a.css.map",
-    "main.b0ba8290.js.map": "/React-Portfolio-main/static/js/main.b0ba8290.js.map",
+    "main.5da6849b.js.map": "/React-Portfolio-main/static/js/main.5da6849b.js.map",
     "787.2860e1ea.chunk.js.map": "/React-Portfolio-main/static/js/787.2860e1ea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a51fb00a.css",
-    "static/js/main.b0ba8290.js"
+    "static/js/main.5da6849b.js"
   ]
 }
