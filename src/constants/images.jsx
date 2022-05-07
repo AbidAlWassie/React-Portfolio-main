@@ -1,6 +1,6 @@
-import profile1 from '../assets/profile1.png';
-import profile2 from '../assets/profile1.png';
-import profile3 from '../assets/profile1.png';
+import profile_lg from '../assets/profile_lg.png';
+import profile_md from '../assets/profile_md.png';
+import profile_sm from '../assets/profile_sm.png';
 import circle1 from '../assets/circle1.png';
 import circle2 from '../assets/circle2.png';
 import square1 from '../assets/square1.png';
@@ -35,9 +35,9 @@ import web_design2 from '../assets/web_design1.jpg';
 
 
 const data = {
-  profile1,
-  profile2,
-  profile3,
+  profile_lg,
+  profile_md,
+  profile_sm,
   circle1,
   circle2,
   square1,
