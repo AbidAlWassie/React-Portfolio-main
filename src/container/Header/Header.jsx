@@ -19,7 +19,7 @@ const Header = () => {
       </div>
 
       <div className="showcase-img">
-        <img src={images.profile1} className="person" alt="Abid" />
+        <img src={images.profile3} className="person" alt="Abid" />
         <img src={images.circle1} className="shape circle" alt="circle" />
         <img src={images.dots} className="shape dots" alt="dots" />
       </div>

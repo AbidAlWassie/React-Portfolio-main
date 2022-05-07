@@ -127,6 +127,9 @@ html {
 }
 
 .navbar.scrolled {
+  -moz-backdrop-filter: 5px;
+  -webkit-backdrop-filter: 5px;
+  backdrop-filter: 5px;
   background-color: var(--bg-color-transparent);
 }
 

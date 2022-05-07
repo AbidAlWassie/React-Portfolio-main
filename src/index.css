@@ -23,7 +23,7 @@
 
   /* bg-[#ffffff10] */
   .navbar.scrolled {
-    @apply py-4 shadow-[0_0_10_0px_rgba(0,_0,_0,_0.1)] fixed backdrop-blur-sm;
+    @apply py-4 shadow-[0_0_10_0px_rgba(0,_0,_0,_0.1)] fixed;
   }
 
 
