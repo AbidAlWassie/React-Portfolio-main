@@ -11,7 +11,7 @@
   --bg-color-1: #272034;
   --bg-color-2: #2F2840;
   --bg-color-3: #2F2840;
-  --bg-color-transparent: rgba(44, 44, 44, 0.2);
+  --bg-color-transparent: rgba(44, 44, 44, 0.4);
   --heading-color: #ffffff;
   --text-color: #c5c5c5;
   --text-color2:#e4e4e7;
@@ -35,7 +35,7 @@ body {
   --bg-color-1: #262d3d;
   --bg-color-2: #1D2530;
   --bg-color-3: #2D3F4E;
-  --bg-color-transparent: rgba(44, 44, 44, 0.2);
+  --bg-color-transparent: rgba(19, 41, 66, 0.5);
   --heading-color: #ffffff;
   --text-color: #c5c5c5;
   --text-color2:#e4e4e7;
@@ -127,9 +127,9 @@ html {
 }
 
 .navbar.scrolled {
-  -moz-backdrop-filter: 5px;
-  -webkit-backdrop-filter: 5px;
-  backdrop-filter: 5px;
+  -moz-backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   background-color: var(--bg-color-transparent);
 }
 

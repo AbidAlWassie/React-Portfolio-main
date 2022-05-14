@@ -1,21 +1,16 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-// import { HiOutlineMenu } from 'react-icons/hi'
 import { MdOutlineDarkMode } from 'react-icons/md'
-
-// import { images } from '../../constants'
 
 const Navbar = () => {
 
-
-
-  const [isOpen, setIsOpen] = useState(false);
+  const [scheme, setScheme] = useState(false);
 
   const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
-    document.body.classList.toggle('light', isOpen);
-  }, [isOpen]);
+    document.body.classList.toggle('light', scheme);
+  }, [scheme]);
 
   useEffect(() => {
     const navbar = document.getElementById("navbar");
@@ -49,7 +44,7 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-      <button className='toggleBtn' id='toggleBtn' onClick={()=> setIsOpen(!isOpen) }>
+      <button className='toggleBtn' id='toggleBtn' onClick={()=> setScheme(!scheme) }>
         <MdOutlineDarkMode/>
       </button>
 
