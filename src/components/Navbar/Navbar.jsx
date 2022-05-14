@@ -4,12 +4,14 @@ import { MdOutlineDarkMode } from 'react-icons/md'
 
 const Navbar = () => {
 
-  const [scheme, setScheme] = useState(false);
+  const localTheme = JSON.parse(localStorage.getItem('key_name')) || false;
+  const [scheme, setScheme] = useState(localTheme);
 
   const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
     document.body.classList.toggle('light', scheme);
+    localStorage.setItem('key_name',scheme); 
   }, [scheme]);
 
   useEffect(() => {
