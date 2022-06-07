@@ -21,9 +21,9 @@ const Footer = () => {
         <div className="social-container-lg">
           {/* <h3>Follow me:</h3> */}
           <div className="social-icons-lg">
-            <a href="url"><BsFacebook/></a>
-            <a href="url"><BsYoutube/></a>
-            <a href="url"><BsGithub/></a>
+            <a href="https://www.facebook.com/AbidAlWassie" target="_blank" rel="noreferrer"><BsFacebook/></a>
+            <a href="https://www.youtube.com/channel/UCYVf_0t2qsjyHILRsLatlHg" target="_blank" rel="noreferrer"><BsYoutube/></a>
+            <a href="https://github.com/AbidAlWassie" target="_blank" rel="noreferrer"><BsGithub/></a>
           </div>
         </div>
       </div>
