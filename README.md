@@ -2,4 +2,6 @@
 
 To Download the Dependencies
 
+```
 npm install react-scripts --save
+```
