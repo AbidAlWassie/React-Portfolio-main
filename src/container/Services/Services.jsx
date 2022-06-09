@@ -1,5 +1,7 @@
 import React from 'react'
 import { images } from '../../constants'
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 
 const Services = () => {
   return (
@@ -24,7 +26,9 @@ const Services = () => {
             </div>
           </div>
           <div className="cta">
-            <a href="mailto:abidalwassie@gmail.com" className="btn">Hire me</a>
+          <Tippy content="Send me an Email" theme='default' placement='right' arrow={true} animation="shift-toward-subtle" duration={0}>
+              <a href="mailto:abidalwassie@gmail.com" className="btn email">Hire me</a>
+            </Tippy>
             <a href={images.email} download className="btn secondary-btn">Download CV</a>
           </div>
         </div>

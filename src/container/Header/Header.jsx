@@ -1,7 +1,8 @@
 import React from 'react'
 // import { motion } from 'framer-motion'
 import { images } from '../../constants'
-
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 
 const Header = () => {
   return (
@@ -13,7 +14,9 @@ const Header = () => {
         <h1 className="heading">Abid Al Wassie</h1>
         <p className="text">I'm a freelance web developer.</p>
         <div className="cta">
-          <a href="mailto:abidalwassie@outlook.com" className="btn">Contact Me</a>
+          <Tippy content="Send me an Email" theme='default' placement='right' arrow={true} animation="shift-toward-subtle" duration={0}>
+            <a href="mailto:abidalwassie@outlook.com" className="btn email">Contact Me</a>
+          </Tippy>
           <a href={images.email} download className="btn secondary-btn">Download CV</a>
         </div>
       </div>

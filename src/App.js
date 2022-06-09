@@ -6,7 +6,6 @@ import { Navbar } from './components/';
 import scrollreveal from 'scrollreveal'
 import mixitup from 'mixitup'
 
-
 function App() {
 
   useEffect(() => {

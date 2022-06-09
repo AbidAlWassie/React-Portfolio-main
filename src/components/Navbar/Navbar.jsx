@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { MdOutlineDarkMode } from 'react-icons/md'
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 
 const Navbar = () => {
 
@@ -46,9 +48,12 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-      <button className='toggleBtn' id='toggleBtn' onClick={()=> setScheme(!scheme) }>
-        <MdOutlineDarkMode/>
-      </button>
+
+      <Tippy content={<div className="special"><span className="">Toggle</span> <span className="tooltip">Theme</span></div>} theme='default' placement='bottom' duration={0} arrow={true} animation="shift-toward-subtle" allowHTML={true}>
+        <button className='toggleBtn' id='toggleBtn' onClick={()=> setScheme(!scheme) }>
+          <MdOutlineDarkMode/>
+        </button>
+      </Tippy>
 
       <div className='menuBtn hamburger' onClick={()=> setToggle(!toggle) }>
         <div className="bar"></div>

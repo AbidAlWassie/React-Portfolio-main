@@ -1,8 +1,8 @@
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import { BsGithub, BsYoutube, BsFacebook } from 'react-icons/bs'
-// import { HiMail } from 'react-icons/hi'
-// import { IoLocationSharp } from 'react-icons/io5'
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 
 const Contact = () => {
   return (
@@ -23,9 +23,15 @@ const Contact = () => {
             <div className="social-container-lg mt-14">
               {/* <h3>Follow me:</h3> */}
               <div className="social-icons-lg">
-                <a href="https://www.facebook.com/AbidAlWassie" target="_blank" rel="noreferrer"><BsFacebook/></a>
-                <a href="https://www.youtube.com/channel/UCYVf_0t2qsjyHILRsLatlHg" target="_blank" rel="noreferrer"><BsYoutube/></a>
-                <a href="https://github.com/AbidAlWassie" target="_blank" rel="noreferrer"><BsGithub/></a>
+                <Tippy content={<div className="special">Follow Me on <span className="tooltip">Facebook</span></div>} theme='default' placement='bottom' duration={0} arrow={true} animation="shift-toward-subtle" allowHTML={true}>
+                  <a href="https://www.facebook.com/AbidAlWassie" target="_blank" rel="noreferrer"><BsFacebook/></a>
+                </Tippy>
+                <Tippy content={<div className="special">Follow Me on <span className="tooltip">YouTube</span></div>} theme='default' placement='bottom' duration={0} arrow={true} animation="shift-toward-subtle" allowHTML={true}>
+                  <a href="https://www.youtube.com/channel/UCYVf_0t2qsjyHILRsLatlHg" target="_blank" rel="noreferrer"><BsYoutube/></a>
+                </Tippy>
+                <Tippy content={<div className="special">Follow Me on <span className="tooltip">Github</span></div>} theme='default' placement='bottom' duration={0} arrow={true} animation="shift-toward-subtle" allowHTML={true}>
+                  <a href="https://github.com/AbidAlWassie" target="_blank" rel="noreferrer"><BsGithub/></a>
+                </Tippy>
               </div>
             </div>
             
